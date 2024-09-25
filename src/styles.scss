@@ -1,1 +1,19 @@
-/* You can add global styles to this file, and also import other style files */
+$main-color: white;
+$main-color2:  #3DCFB6;
+
+body{
+    margin: 0;
+    background-color: black;
+    color: $main-color;
+}
+
+button a {
+    cursor: pointer;
+}
+
+@mixin slideButton(){
+
+}
+
+// @include slideButton();
+

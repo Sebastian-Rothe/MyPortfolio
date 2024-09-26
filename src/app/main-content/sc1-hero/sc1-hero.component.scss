@@ -8,7 +8,7 @@
     height: 100vh;
 
     .hero{
-        height: calc(100vh - 10%);
+        height: calc(100vh - 12%);
         @include dFlex();
 
         .center{

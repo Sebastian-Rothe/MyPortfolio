@@ -1,23 +1,40 @@
-@import '../../../../styles.scss';
+@import "../../../../styles.scss";
 
+nav {
+  padding: $main-padding;
+  background: transparent;
+  height: 12%;
+  @include dFlex();
+  > div {
+    width: $main-width;
+    @include dFlex($jc: space-between);
 
-nav{
-    padding: $main-padding;
-    background: transparent;
-    height: 10%;
-    @include dFlex();
-    >div{
-        width: $main-width;
-        @include dFlex($jc: space-between);
+    .left {
+      width: 36%;
+      @include dFlex($jc: space-between, $g: 5%);
 
-        .left{
-            width: 36%;
-            @include dFlex($jc: space-between, $g: 5%);
+      > a {
+        position: relative;
+        &::after {
+          content: "";
+          position: absolute;
+          width: 8px;
+          height: 8px;
+          background-color: $main-color2;
+          border-radius: 50%;
+          bottom: -8px;
+          left: 50%;
+          opacity: 0;
         }
-        .right{
-            >img{
-                height: 80px;
-            }
+        &:hover::after {
+          opacity: 1;
         }
+      }
     }
+    .right {
+      > img {
+        height: 80px;
+      }
+    }
+  }
 }

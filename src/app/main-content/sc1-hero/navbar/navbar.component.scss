@@ -1,0 +1,18 @@
+@import '../../../../styles.scss';
+
+
+nav{
+    padding: $main-padding;
+    background: transparent;
+    height: 10%;
+    @include dFlex();
+    >div{
+        width: $main-width;
+        @include dFlex($jc: space-between);
+
+        .left{
+            width: 35%;
+            @include dFlex($jc: space-between, $g: 10%);
+        }
+    }
+}

@@ -1,0 +1,11 @@
+@import '../../styles.scss';
+
+
+
+div{
+    width: $main-width;
+    max-width: $main-max-width;
+    @include dFlex();
+    flex-direction: column;
+    // box-sizing: border-box; 
+}

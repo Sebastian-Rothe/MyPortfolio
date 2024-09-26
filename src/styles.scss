@@ -1,19 +1,36 @@
 $main-color: white;
 $main-color2:  #3DCFB6;
 
+$main-width: 100%;
+$main-max-width: 1920px;
+$main-padding: 0 4%;
+
+
+button, a {
+    text-decoration: none;
+    color: $main-color;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+// @mixin slideButton(){
+    
+// }
+// @include slideButton();
+
+
+
+
+@mixin dFlex($jc: center, $ai: center, $g: 0px){
+    display: flex;
+    justify-content: $jc;
+    align-items: $ai;
+    gap: $g;
+}
+
 body{
     margin: 0;
     background-color: black;
     color: $main-color;
 }
-
-button a {
-    cursor: pointer;
-}
-
-@mixin slideButton(){
-
-}
-
-// @include slideButton();
-

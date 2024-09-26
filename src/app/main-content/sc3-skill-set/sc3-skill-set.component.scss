@@ -1,0 +1,21 @@
+@import '../../../styles.scss';
+
+.icon-container{
+    width: 55%;
+    max-width: 500px;
+    display: grid;  
+    grid-template-columns: repeat(4, 1fr); 
+    gap: 10px; 
+
+    .single-icon{
+        >img{
+            width:50px;
+            padding-bottom: 4px;
+        }
+        >span{
+            text-align: center;
+        }
+        @include dFlex();
+        flex-direction: column;
+    }
+}

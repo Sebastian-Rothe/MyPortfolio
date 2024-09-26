@@ -11,8 +11,8 @@ nav{
         @include dFlex($jc: space-between);
 
         .left{
-            width: 35%;
-            @include dFlex($jc: space-between, $g: 10%);
+            width: 36%;
+            @include dFlex($jc: space-between, $g: 5%);
         }
     }
 }

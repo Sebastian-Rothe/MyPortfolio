@@ -6,44 +6,24 @@
     background-size: cover;
     background-position: center;
     height: 100vh;
+
+    .hero{
+        height: calc(100vh - 10%);
+        @include dFlex();
+
+        .center{
+            @include dFlex();
+            flex-direction: column;
+            >span{
+                font-size: 2rem;
+            }
+            >h1{
+                font-size: 4rem;
+                margin-top: 3%;
+            }
+        }
+    }
 }
 
-    // > button {
-    //     cursor: pointer;
-    //     color: $main-color;
-    //     height: 48px;
-    //     width: 107px;
-    //     border-radius: 100px;
-    //     border: 1px solid $main-color;
-    //     background: transparent;
-    //     overflow: hidden;
-
-    //     &:hover {
-    //         color: $main-color2;
-    //         border: 1px solid $main-color2;
-
-    //         > span {
-    //             animation: SlideLeft 3s infinite linear; // Animation hier anpassen
-    //         }
-    //     }
-
-    //     > span {
-    //         display: inline-block; // Notwendig, damit die Animation funktioniert
-    //         position: relative; // Damit die Animation funktioniert
-    //         white-space: nowrap;
-    //     }
-    // }
-
-
-// @keyframes SlideLeft {
-//     0% {
-//         transform: translateX(0); // Start in der Mitte
-//     }
-//     50% {
-//         transform: translateX(-200%); // Text kommt von rechts wieder herein
-//     }
-//     100%{
-//         transform: translateX(-200%);
-//     }
-// }
+ 
 

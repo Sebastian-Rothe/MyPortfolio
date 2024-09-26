@@ -14,5 +14,10 @@ nav{
             width: 36%;
             @include dFlex($jc: space-between, $g: 5%);
         }
+        .right{
+            >img{
+                height: 80px;
+            }
+        }
     }
 }

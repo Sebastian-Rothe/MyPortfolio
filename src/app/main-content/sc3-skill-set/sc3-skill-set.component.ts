@@ -22,8 +22,8 @@ export class Sc3SkillSetComponent {
       { path:'assets/img/skill-set/JavaScript.svg', name: 'JavaScript', alt: 'JavaScript' },
       { path:'assets/img/skill-set/Api.svg', name: 'Rest-Api', alt: 'Rest-Api' },
       { path:'assets/img/skill-set/Frame.svg', name: 'Material Design', alt: 'Material Design' },
-      { path:'assets/img/skill-set/html.svg', name: 'HTML', alt: 'HTML' },
       { path:'assets/img/skill-set/scrum.svg', name: 'Scrum', alt: 'Scrum' },
+      { path:'assets/img/skill-set/html.svg', name: 'HTML', alt: 'HTML' },
       { path:'assets/img/skill-set/Css.svg', name: 'CSS', alt: 'CSS' },
       { path:'assets/img/skill-set/Growth.svg', name: 'Growth mindset', alt: 'Growth mindset' }
     ]

@@ -2,7 +2,7 @@
 
 
 
-div{
+#main-content-div{
     width: $main-width;
     max-width: $main-max-width;
     @include dFlex();

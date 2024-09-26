@@ -1,0 +1,41 @@
+@import "../../../styles.scss";
+
+.about-me-div {
+  margin: 50px 0 50px 0;
+  width: $main-width;
+  max-width: $main-max-width;
+//   padding: $main-padding;
+  @include dFlex($jc: space-around);
+
+  .left {
+    width: 35%;
+
+    .image {
+      width: 100%;
+      aspect-ratio: 1 / 1;
+      border-radius: 40px;
+    }
+  }
+
+  .right {
+    background-color: rgb(31, 46, 43);
+    width: 35%;
+    padding: 0 1.5%;
+    aspect-ratio: 1 / 1;
+    border-radius: 40px;
+    @include dFlex($ai: flex-start);
+    flex-direction: column;
+    border: 1px solid $main-color2;
+    > div {
+      @include dFlex($g: 3%);
+      > img {
+        height: 35px;
+      }
+    }
+    > h2 {
+      color: $main-color2;
+      font-size: 2.5rem;
+      margin: 0;
+    }
+  }
+}

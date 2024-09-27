@@ -13,23 +13,7 @@ nav {
       width: 36%;
       @include dFlex($jc: space-between, $g: 5%);
 
-      > a {
-        position: relative;
-        &::after {
-          content: "";
-          position: absolute;
-          width: 8px;
-          height: 8px;
-          background-color: $main-color2;
-          border-radius: 50%;
-          bottom: -8px;
-          left: 50%;
-          opacity: 0;
-        }
-        &:hover::after {
-          opacity: 1;
-        }
-      }
+      @include linkDot(50%, -8px);
     }
     .right {
       > img {

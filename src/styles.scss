@@ -68,7 +68,7 @@ a {
 // }
 // @include slideButton();
 
-@mixin linkDot($positionX, $positionY) {
+@mixin linkDot($positionX: -16px, $positionY: 25%, $hover-color: white) {
   > a {
     position: relative;
     &::after {
@@ -84,6 +84,9 @@ a {
     }
     &:hover::after {
       opacity: 1;
+    }
+    &:hover{
+        color: $hover-color;
     }
   }
 }

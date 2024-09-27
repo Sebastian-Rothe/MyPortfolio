@@ -12,5 +12,6 @@ footer {
     .right{
         @include dFlex($jc: space-between, $ai: flex-start);
         flex-direction: column;
+        @include linkDot( $hover-color: $main-color2 );
     }
 }

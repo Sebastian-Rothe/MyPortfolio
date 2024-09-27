@@ -15,7 +15,7 @@ $main-max-width: 1920px;
 $main-padding: 0 4%;
 
 button,
-a {
+a, input, textarea {
   text-decoration: none;
   color: $main-color;
   background: transparent;

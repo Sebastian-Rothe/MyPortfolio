@@ -27,46 +27,45 @@ a, input, textarea {
   display: none;
 }
 
-// @mixin slideButton(){
-// > button {
-//     cursor: pointer;
-//     color: $main-color;
-//     height: 48px;
-//     width: 107px;
-//     border-radius: 100px;
-//     border: 1px solid $main-color;
-//     background: transparent;
-//     overflow: hidden;
+.slide-button{
+    // cursor: pointer;
+    color: $main-color;
+    height: 48px;
+    width: 107px;
+    border-radius: 100px;
+    border: 1px solid $main-color;
+    background: transparent;
+    overflow: hidden;
 
-//     &:hover {
-//         color: $main-color2;
-//         border: 1px solid $main-color2;
+    &:hover {
+        color: $main-color2;
+        border: 1px solid $main-color2;
 
-//         > span {
-//             animation: SlideLeft 3s infinite linear; // Animation hier anpassen
-//         }
-//     }
+        > span {
+            animation: SlideLeft 3s infinite linear; // Animation hier anpassen
+        }
+    }
 
-//     > span {
-//         display: inline-block; // Notwendig, damit die Animation funktioniert
-//         position: relative; // Damit die Animation funktioniert
-//         white-space: nowrap;
-//     }
-// }
+    > span {
+        display: inline-block; // Notwendig, damit die Animation funktioniert
+        position: relative; // Damit die Animation funktioniert
+        white-space: nowrap;
+    }
+}
 
-// @keyframes SlideLeft {
-//     0% {
-//         transform: translateX(0); // Start in der Mitte
-//     }
-//     50% {
-//         transform: translateX(-200%); // Text kommt von rechts wieder herein
-//     }
-//     100%{
-//         transform: translateX(-200%);
-//     }
-// }
-// }
-// @include slideButton();
+@keyframes SlideLeft {
+    0% {
+        transform: translateX(0); // Start in der Mitte
+    }
+    50% {
+        transform: translateX(-200%); // Text kommt von rechts wieder herein
+    }
+    100%{
+        transform: translateX(-200%);
+    }
+}
+
+
 
 @mixin linkDot($positionX: -16px, $positionY: 25%, $hover-color: white) {
   > a {

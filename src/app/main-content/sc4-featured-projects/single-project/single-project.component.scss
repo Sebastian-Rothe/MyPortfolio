@@ -1,33 +1,41 @@
 @import "../../../../styles.scss";
 
-.single-project{
-    width: 70%;
-    height: 100px;
-    @include dFlex($jc: space-between);
-    &:hover{
-        cursor: pointer;
-        background-color: $main-color3;
-        
+.single-project {
+  position: relative;
+  width: 70%;
+  height: 100px; // das muss möglicherweise noch angepasst werden!
+  @include dFlex($jc: space-between);
+  .hover-img {
+    visibility: hidden; 
+    opacity: 0;
+    transition: visibility 0s, opacity 0.3s ease-in-out;
+  }
+  &:hover .hover-img {
+    visibility: visible;
+    opacity: 1;
+  }
+  &:hover {
+    cursor: pointer;
+    background-color: $main-color3;
+  }
+  .name {
+    margin-left: 16px;
+    @include dFlex($jc: space-between, $g: 4px);
+    font-weight: bold;
+    font-size: 1.5rem;
+  }
+  .languages {
+    @include dFlex($jc: space-between, $g: 20px);
+    .small-line:not(:last-child) {
+      width: 1px;
+      height: 16px;
+      background-color: $main-color2;
     }
-    .name{
-        margin-left: 16px;
-        @include dFlex($jc: space-between, $g: 4px);
-        font-weight: bold;
-        font-size: 1.5rem;
-    }
-    .languages{
-        @include dFlex($jc: space-between, $g: 20px);
-        .small-line:not(:last-child) {
-            width: 1px;
-            height: 16px;
-            background-color: $main-color2;
-
-        }
-    }
+  }
 }
 
-.line{
-    height: 1px;
-    width: 70%;
-    background-color: $main-color2;
+.line {
+  height: 1px;
+  width: 70%;
+  background-color: $main-color2;
 }

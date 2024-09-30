@@ -1,0 +1,10 @@
+@import "../../../styles.scss";
+
+.sc5-w-m-c{
+    height: 60vh;
+    padding: $main-padding;
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+    @include dFlex($jc: flex-start);
+    flex-direction: column;
+}

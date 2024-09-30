@@ -29,14 +29,14 @@ a, input, textarea {
 }
 
 .slide-button{
-    // cursor: pointer;
     color: $main-color;
     height: 48px;
-    width: 107px;
+    width: max-content;
     border-radius: 100px;
     border: 1px solid $main-color;
     background: transparent;
     overflow: hidden;
+    padding: 16px;
 
     &:hover {
         color: $main-color2;

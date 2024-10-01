@@ -1,0 +1,23 @@
+@import "../../../../styles.scss";
+
+.single-opinion {
+  width: 35%;
+  border: 2px solid $main-color2;
+  background-color: $main-color3;
+  padding: 2%;
+  border-radius: 24px;
+  
+
+  > p {
+    margin: 0 0 14px 0;
+    // text-align: justify;
+  }
+  .line-and-name {
+    @include dFlex($g: 4%);
+    .line {
+      height: 1px;
+      flex-grow: 1;
+      background-color: white;
+    }
+  }
+}

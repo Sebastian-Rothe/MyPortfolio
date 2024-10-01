@@ -1,6 +1,11 @@
 <div class="sc5-w-m-c">
     <h2>What my colleagues say about me</h2>
     <div class="input-from-colleagues">
-        <app-single-opinion></app-single-opinion>
+        
+            @for(opinion of opinion; track opinion){
+        
+                <app-single-opinion [opinion]="opinion"></app-single-opinion> 
+            }
+        
     </div>
 </div>

@@ -22,7 +22,7 @@
       }
       > h1 {
         font-size: 6.5rem;
-        margin-top: 3%;
+        margin: 3% 0;
       }
       .button-div {
         @include dFlex($g: 40px);

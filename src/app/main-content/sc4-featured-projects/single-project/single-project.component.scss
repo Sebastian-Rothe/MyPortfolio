@@ -39,3 +39,15 @@
   width: 70%;
   background-color: $main-color2;
 }
+
+.image-div {
+  position: absolute;
+  right: 8%; /* Positionierung rechts vom Hauptinhalt */
+  transform: translateY(-40%); /* Exakte Zentrierung */
+  z-index: 100;
+
+  > img {
+    width: 300px; /* Die gewünschte Breite des Bildes */
+    height: auto;
+  }
+}

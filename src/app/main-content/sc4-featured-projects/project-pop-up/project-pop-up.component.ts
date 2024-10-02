@@ -1,5 +1,5 @@
-import { Component } from '@angular/core';
-
+import { Component, Input } from '@angular/core';
+import { ProjectInterface } from '../../../interface/project.interface';
 @Component({
   selector: 'app-project-pop-up',
   standalone: true,
@@ -8,5 +8,9 @@ import { Component } from '@angular/core';
   styleUrl: './project-pop-up.component.scss'
 })
 export class ProjectPopUpComponent {
-
+  @Input() project: ProjectInterface = {
+    name: 'EL Pollo Loco',
+    link: 'link-to-my-Pollo',
+    languages: ['JavaScript', 'HTML', 'CSS'],
+  };
 }

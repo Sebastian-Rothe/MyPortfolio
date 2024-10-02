@@ -1,7 +1,8 @@
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
 import { SingleProjectComponent } from './single-project/single-project.component';
-import { ProjectInterface } from '../../interface/project.interface';
+// import { ProjectInterface } from '../../interface/project.interface';
 import { ProjectPopUpComponent } from './project-pop-up/project-pop-up.component';
+import { ProjectsService } from '../../services/projects.service';
 
 @Component({
   selector: 'app-sc4-featured-projects',
@@ -11,11 +12,12 @@ import { ProjectPopUpComponent } from './project-pop-up/project-pop-up.component
   styleUrl: './sc4-featured-projects.component.scss',
 })
 export class Sc4FeaturedProjectsComponent {
-  projects: ProjectInterface[] = [
-    {
-      name: 'EL Pollo Loco',
-      link: 'link-to-my-Pollo',
-      languages: ['JavaScript', 'HTML', 'CSS'],
-    },
-  ];
+  // projects: ProjectInterface[] = [
+  //   {
+  //     name: 'EL Pollo Loco',
+  //     link: 'link-to-my-Pollo',
+  //     languages: ['JavaScript', 'HTML', 'CSS'],
+  //   },
+  // ];
+  projects = inject(ProjectsService);
 }

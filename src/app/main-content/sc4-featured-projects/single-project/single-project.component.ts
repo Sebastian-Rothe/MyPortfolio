@@ -13,5 +13,6 @@ export class SingleProjectComponent {
     name: 'EL Pollo Loco',
     link: 'link-to-my-Pollo',
     languages: ['JavaScript', 'HTML', 'CSS'],
+    image: 'assets/img/featured-projects/Pepe.png'
   };
 }

@@ -118,6 +118,18 @@ body {
   background-color: black;
   color: $main-color;
   font-family: "Fira Code";
+  box-sizing: border-box;
+}
+
+h2{
+  color: $main-color2;
+  font-size: 3rem;
+  margin: 0;
+}
+h3{
+  color: $main-color2;
+  font-size: 1.2rem;
+  margin: 0;
 }
 
 .custom-shadow {

@@ -5,11 +5,12 @@
   width: $main-width;
   max-width: $main-max-width;
 //   padding: $main-padding;
-  @include dFlex($jc: space-around);
+  @include dFlex($jc: center, $g: 80px);
 
   .left {
     @include customShadow();
     width: 35%;
+    margin-bottom: 8%;
 
     .image {
       width: 100%;
@@ -19,6 +20,7 @@
   }
 .align-right{
   width: 35%;
+  margin-top: 8%;
 
   .right {
     background-color: rgb(31, 46, 43);

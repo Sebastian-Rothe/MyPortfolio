@@ -8,6 +8,7 @@
   @include dFlex($jc: space-around);
 
   .left {
+    @include customShadow();
     width: 35%;
 
     .image {

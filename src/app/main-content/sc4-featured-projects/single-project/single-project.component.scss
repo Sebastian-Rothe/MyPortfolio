@@ -6,7 +6,7 @@
   height: 100px; // das muss möglicherweise noch angepasst werden!
   @include dFlex($jc: space-between);
   .hover-img {
-    visibility: hidden; 
+    visibility: hidden;
     opacity: 0;
     transition: visibility 0s, opacity 0.3s ease-in-out;
   }
@@ -42,19 +42,35 @@
 
 .image-div {
   position: absolute;
-  right: 8%; 
+  right: 8%;
   transform: translateY(-40%);
   z-index: 100;
   visibility: hidden;
-  opacity: 0; 
+  opacity: 0;
   transition: visibility 0s, opacity 0.3s ease-in-out;
 
+  @include customShadow(
+    $position: absolute,
+    $border-radius: 20px,
+    $line-gap: 12px,
+    $angle: 135deg,
+    $translate-x: 20px,
+    $translate-y: 20px
+  );
+
+  &::before {
+    box-sizing: border-box;
+    padding: 10px;
+  }
+
   > img {
-    width: 300px; 
+    width: 300px;
     height: auto;
+    display: block;
   }
 }
+
 .single-project:hover ~ .image-div {
   visibility: visible;
-  opacity: 1; 
+  opacity: 1;
 }

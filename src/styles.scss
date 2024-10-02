@@ -127,9 +127,10 @@ h2 {
   margin: 0;
 }
 h3 {
+  font-family: 'Karla';
   color: $main-color2;
   font-size: 1.2rem;
-  margin: 0;
+  margin: 0 0 20px 0;
 }
 
 @mixin customShadow(

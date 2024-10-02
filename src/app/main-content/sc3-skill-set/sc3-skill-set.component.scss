@@ -3,16 +3,17 @@
 .sc3-skill-set {
   @include dFlex($jc: space-around);
 }
-
-.skill-set {
-  background-color: $main-color3;
+.align-skill-set{
   width: 35%;
-  padding: 0 1.5%;
-  aspect-ratio: 1 / 1;
-  border-radius: 40px;
-  @include dFlex($ai: flex-start);
-  flex-direction: column;
-  border: 1px solid $main-color2;
+  .skill-set {
+    background-color: $main-color3;
+    padding: 0 1.5%;
+    aspect-ratio: 1 / 1;
+    border-radius: 40px;
+    @include dFlex($ai: flex-start);
+    flex-direction: column;
+    border: 1px solid $main-color2;
+  }
 }
 
 .icon-container {

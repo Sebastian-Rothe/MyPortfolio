@@ -1,38 +1,49 @@
-@import '../../../styles.scss';
+@import "../../../styles.scss";
 
-.sc3-skill-set{
-    @include dFlex($jc: space-around);
+.sc3-skill-set {
+  @include dFlex($jc: space-around);
 }
 
-.skill-set{
-    background-color: $main-color3;
-    width: 35%;
-    padding: 0 1.5%;
-    aspect-ratio: 1 / 1;
-    border-radius: 40px;
-    @include dFlex($ai: flex-start);
+.skill-set {
+  background-color: $main-color3;
+  width: 35%;
+  padding: 0 1.5%;
+  aspect-ratio: 1 / 1;
+  border-radius: 40px;
+  @include dFlex($ai: flex-start);
+  flex-direction: column;
+  border: 1px solid $main-color2;
+}
+
+.icon-container {
+  max-width: 500px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+
+  .single-icon {
+    @include dFlex();
     flex-direction: column;
-    border: 1px solid $main-color2;
-}
-
-
-.icon-container{
-    
-    max-width: 500px;
-    display: grid;  
-    grid-template-columns: repeat(4, 1fr); 
-    gap: 20px; 
-
-    .single-icon{
-        >img{
-            width:50px;
-            height: 50px;
-            padding-bottom: 4px;
-        }
-        >span{
-            text-align: center;
-        }
-        @include dFlex();
-        flex-direction: column;
+    > img {
+      width: 50px;
+      height: 50px;
+      padding-bottom: 4px;
+      transition: transform 0.3s ease-in-out;
+      &:hover {
+        transform: scale(1.1);
+      }
     }
+    > span {
+      text-align: center;
+      transition: color 0.1s ease-in-out;
+    }
+
+    &:last-child {
+      transition: color 0.3s ease-in-out;
+
+      &:hover {
+        color: $main-color2;
+      }
+    }
+  }
 }

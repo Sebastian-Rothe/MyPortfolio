@@ -22,7 +22,7 @@
 
   <div class="skill-set-icons">
     <div class="icon-container">
-      @for(icon of icons; track icon){
+      @for(icon of service.icons; track icon){
       <div class="single-icon">
         <img src="{{ icon.path }}" alt="{{ icon.alt }} Icon" />
         <span>{{ icon.name }}</span>

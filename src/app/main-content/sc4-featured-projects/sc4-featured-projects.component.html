@@ -1,7 +1,7 @@
 <div class="sc4-featured-p">
 
   
-  <app-project-pop-up></app-project-pop-up>
+  <app-project-pop-up [service]="service"></app-project-pop-up>
 
 
   <div class="headline">
@@ -14,7 +14,7 @@
     <div class="line"></div>
   </div>
   <div class="project-section">
-    @for(project of projects.projects; track $index){
+    @for(project of service.projects; track $index){
 
         <app-single-project [project]="project"></app-single-project>
     }

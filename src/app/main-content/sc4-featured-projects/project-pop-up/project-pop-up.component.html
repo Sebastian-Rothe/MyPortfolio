@@ -5,10 +5,10 @@
       <div>
 
         <!-- für index -->
-      <span>01</span>
+      <span>{{ service.projects[0] }}</span>
 
       <!-- name -->
-      <span>name</span>
+      <span>{{service.projects[0].name}}</span>
       <span>What is this project about</span>
 
       <!-- beschreibung des projekts -->
@@ -26,23 +26,9 @@
     </div>
     <div>
       <span class="close-btn" id="closePopup">&times;</span>
-      <img src="" alt="" />
+      <img src="{{service.projects[0].image}}" alt="" />
       <button>Next project</button>
     </div>
   </div>
 </div>
 
-
-<div class="single-project">
-    <span class="name"
-      >{{ project.name }}
-      <img src="assets/img/featured-projects/arrow_outward.svg" alt="" class="hover-img"
-    /></span>
-    <div class="languages">
-      @for(language of project.languages; track language){
-      <span>{{ language }}</span>
-      <div class="small-line"></div>
-      }
-    </div>
-  </div>
-  <div class="line"></div>

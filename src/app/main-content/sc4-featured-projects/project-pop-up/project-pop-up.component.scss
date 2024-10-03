@@ -8,8 +8,8 @@
   height: 100%;
   background-color: rgba(0, 0, 0, 0.7);
   @include dFlex();
-  opacity: 0;
-  visibility: hidden;
+  // opacity: 0;
+  // visibility: hidden;
   transition: opacity 0.3s ease, visibility 0.3s ease;
   z-index: 10;
 

@@ -19,5 +19,5 @@ export class Sc4FeaturedProjectsComponent {
   //     languages: ['JavaScript', 'HTML', 'CSS'],
   //   },
   // ];
-  projects = inject(ProjectsService);
+  service = inject(ProjectsService);
 }

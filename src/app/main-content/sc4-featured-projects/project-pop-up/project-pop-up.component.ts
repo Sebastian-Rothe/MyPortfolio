@@ -8,9 +8,11 @@ import { ProjectInterface } from '../../../interface/project.interface';
   styleUrl: './project-pop-up.component.scss'
 })
 export class ProjectPopUpComponent {
-  @Input() project: ProjectInterface = {
-    name: 'EL Pollo Loco',
-    link: 'link-to-my-Pollo',
-    languages: ['JavaScript', 'HTML', 'CSS'],
-  };
+  // @Input() project: ProjectInterface = {
+  //   name: 'EL Pollo Loco',
+  //   link: 'link-to-my-Pollo',
+  //   languages: ['JavaScript', 'HTML', 'CSS'],
+  // };
+  @Input() service: any;
+
 }

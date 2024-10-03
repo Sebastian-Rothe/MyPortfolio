@@ -1,6 +1,7 @@
 @import "../../../styles.scss";
 
 .sc3-skill-set {
+  background-color: $main-background;
   @include dFlex($jc: space-around);
 }
 .align-skill-set{

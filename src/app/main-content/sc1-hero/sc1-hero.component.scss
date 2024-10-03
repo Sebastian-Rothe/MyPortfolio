@@ -1,11 +1,13 @@
 @import "../../../styles.scss";
 
 .sc1-hero {
+  position: relative;
+  top: 0;
   width: $main-width;
-  background-image: linear-gradient(to top right, black, rgb(15, 83, 72));
+  // background-image: linear-gradient(to top right, black, rgb(15, 83, 72));
   background-size: cover;
   background-position: center;
-  height: 100vh;
+  height: 92vh;
 
   .hero {
     height: calc(100vh - 12%);

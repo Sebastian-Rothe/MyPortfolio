@@ -1,20 +1,32 @@
-@import '../styles.scss';
+@import "../styles.scss";
 
-
-.align-main-content{
-    // width: 100%;
-    // max-width: $main-max-width;
-    display: flex;
-    flex-direction: column;
-    // justify-content: center;
-    align-items: center;
+.align-main-content {
+    background-image: linear-gradient(to top right, black 50%, rgb(15, 83, 72) 100%);
+    
+  // width: 100%;
+  // max-width: $main-max-width;
+  display: flex;
+  flex-direction: column;
+  // justify-content: center;
+  align-items: center;
 }
-.align-footer{
-    
-        width: $main-width;
-        max-width: $main-max-width;
-        @include dFlex($ai: none);
-        flex-direction: column;
-        box-sizing: border-box; 
-    
+.align-footer-header {
+  position: relative;
+  width: $main-width;
+  max-width: $main-max-width;
+  @include dFlex($ai: none);
+  flex-direction: column;
+  box-sizing: border-box;
+}
+
+.header-align{
+    position: sticky;
+    top: 0;
+    z-index: 10; // Damit der Header über dem Hero bleibt
+    width: 100%;
+  
+}
+
+body{
+    background-image: linear-gradient(to top right, black, rgb(15, 83, 72));
 }

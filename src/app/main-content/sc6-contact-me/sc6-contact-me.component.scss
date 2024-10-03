@@ -3,6 +3,7 @@
 
 
 .contact-me-div{
+    background-color: $main-background;
     @include dFlex($jc: space-around);
     .left{
         width: 40%;

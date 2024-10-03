@@ -1,0 +1,20 @@
+@import '../styles.scss';
+
+
+.align-main-content{
+    // width: 100%;
+    // max-width: $main-max-width;
+    display: flex;
+    flex-direction: column;
+    // justify-content: center;
+    align-items: center;
+}
+.align-footer{
+    
+        width: $main-width;
+        max-width: $main-max-width;
+        @include dFlex($ai: none);
+        flex-direction: column;
+        box-sizing: border-box; 
+    
+}

@@ -7,5 +7,5 @@
     max-width: $main-max-width;
     @include dFlex($ai: none);
     flex-direction: column;
-    // box-sizing: border-box; 
+    box-sizing: border-box; 
 }

@@ -20,20 +20,33 @@
     }
   }
 .align-right{
-  width: 35%;
+  width: 32%;
   margin-top: 8%;
 
   .right {
     background-color: rgb(31, 46, 43);
-    padding: 0 1.5%;
+    padding:  5%;
     aspect-ratio: 1 / 1;
     border-radius: 40px;
-    @include dFlex($ai: flex-start);
+    @include dFlex($jc: flex-start, $ai: flex-start);
     flex-direction: column;
     border: 1px solid $main-color2;
+    >p{
+      font-family: 'Karla';
+      font-size: 1.1rem;
+      margin-bottom: 5%;
+
+    }
+    
     > div {
-      @include dFlex($g: 3%);
+      @include dFlex($g: 4%, $ai: flex-start);
+      >p{
+        font-family: 'Karla';
+        font-size: 1.1rem;
+        margin: 0 0 12px 0;
+      }
       > img {
+        margin-top: 4px;
         height: 35px;
       }
     }

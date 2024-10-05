@@ -4,16 +4,33 @@
   background-color: $main-background;
   @include dFlex($jc: space-around);
 }
-.align-skill-set{
-  width: 35%;
+.align-skill-set {
+  width: 32%;
   .skill-set {
     background-color: $main-color3;
-    padding: 0 1.5%;
+    padding: 5%;
     aspect-ratio: 1 / 1;
     border-radius: 40px;
-    @include dFlex($ai: flex-start);
+    @include dFlex($ai: flex-start, $jc: flex-start);
     flex-direction: column;
     border: 1px solid $main-color2;
+    > p {
+      font-family: "Karla";
+      font-size: 1.1rem;
+      text-align: justify;
+    }
+    > h4 {
+      margin: 4% 0 3% 0;
+      font-family: "Karla";
+      font-size: 1.5rem;
+      
+      > span {
+        color: $main-color2;
+      }
+    }
+    >button{
+      margin-top: 4%;
+    }
   }
 }
 

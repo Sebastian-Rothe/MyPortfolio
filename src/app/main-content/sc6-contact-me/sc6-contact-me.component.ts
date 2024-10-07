@@ -21,7 +21,7 @@ export class Sc6ContactMeComponent {
   mailTest = true;
 
   post = {
-    endPoint: 'https://deineDomain.de/sendMail.php',
+    endPoint: 'https://sebastian-rothe.com/sendMail.php',
     body: (payload: any) => JSON.stringify(payload),
     options: {
       headers: {

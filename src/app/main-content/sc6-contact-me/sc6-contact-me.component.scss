@@ -10,6 +10,40 @@
         max-width: 800px;
     }
     .right{
+        >form{
+            display: flex;
+            flex-direction: column;
+
+            >label{
+                color: $main-color2;
+                font-size: 1.3rem;
+                margin: 3% 0 3% 3%;
+            }
+            >input{
+                font-family: 'Karla';
+                font-size: 1rem;
+                margin: 0 0 3% 3%;
+                outline: none;
+                
+            }
+            >textarea{
+                font-family: 'Karla';
+                margin: 0 0 0 3%;
+                font-size: 1rem;
+                outline: none;
+            }
+            >span{
+                margin-left: 3%;
+            }
+            >p{
+                >span{
+                    color: $main-color2;
+                    &:hover{
+                        cursor: pointer;;
+                    }
+                }
+            }
+        }
         width: 40%;
         max-width: 800px;
         .line{

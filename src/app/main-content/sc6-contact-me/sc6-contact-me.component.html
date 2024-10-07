@@ -25,7 +25,7 @@
         required
       />
       @if(!name.valid && name.touched && !name.disabled){
-        <span>fill</span>
+        <span>Oops! it seems your name is missing</span>
        }
       <div class="line"></div>
       <label for="email">What's your email?</label>
@@ -41,7 +41,7 @@
         pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}"
       />
       @if(!email.valid && email.touched && !email.disabled){
-        <span>fill</span>
+        <span>Hoppala! your email is required</span>
        }
       <div class="line"></div>
       <label for="text">How can I help you?</label>
@@ -56,16 +56,16 @@
         required
       ></textarea>
       @if(!message.valid && message.touched && !message.disabled){
-        <span>fill</span>
+        <span>What do you need to develop?</span>
        }
       <div class="line"></div>
-      <div>
-        <input type="checkbox" />
+      
         <p>
-          I've read the<span>privacy policy</span>and agree to the processing of
+          <input type="checkbox" required />
+          I've read the <span>privacy policy</span> and agree to the processing of
           my data as outlined.
         </p>
-      </div>
+      
       
       <button type="submit">Say Hello ;)</button>
     </form>

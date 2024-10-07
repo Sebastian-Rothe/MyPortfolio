@@ -20,10 +20,10 @@
       position: relative;
       bottom: 50%;
       > span {
-        font-size: 2rem;
+        font-size: clamp(1.5rem, 2.5vw, 3rem);  // Dynamische Größe für Span
       }
       > h1 {
-        font-size: 6.5rem;
+        font-size: clamp(2rem, 6vw, 7rem); // Minimum 2rem, dynamisch bis maximal 6rem
         margin: 3% 0;
       }
       .button-div {
@@ -101,3 +101,9 @@
     }
   }
 }
+
+// @media (max-width: 1920px) {
+//   h1{
+//     font-size: 80px;
+//   }
+// }

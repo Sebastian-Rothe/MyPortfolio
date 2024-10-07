@@ -1,7 +1,6 @@
 import { Component } from '@angular/core';
 import { SingleOpinionComponent } from './single-opinion/single-opinion.component';
 import { OpinionInterface } from '../../interface/opinion.interface';
-import { getLocaleEraNames } from '@angular/common';
 
 @Component({
   selector: 'app-sc5-what-my-colleagues-say',
@@ -13,12 +12,8 @@ import { getLocaleEraNames } from '@angular/common';
 export class Sc5WhatMyColleaguesSayComponent {
   opinion: OpinionInterface[] = [
     {
-      name: 'Max Mustermann',
-      text: `Lorem ipsum dolor sit, amet consectetur adipisicing elit. Distinctio,
-      commodi tempora illo repellendus voluptates error fugiat quisquam
-      praesentium totam corrupti dolores atque, necessitatibus hic iste ex
-      voluptas architecto corporis qui.`
-
+      name: 'Batool Zamani',
+      text: `Ich habe mit Sebastian an zwei Projekten zusammengearbeitet. Er bringt immer positive Energie mit. Er ist sehr gut darin, seine Zeit zu organisieren und findet auch in schwierigen Situationen stets effektive Lösungen.`,
     },
   ];
 }

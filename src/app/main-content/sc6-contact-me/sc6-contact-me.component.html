@@ -1,6 +1,4 @@
-
 <div class="contact-me-div">
-
   <div class="left">
     <h3>Contact me</h3>
     <h2>Let's work together</h2>
@@ -8,23 +6,68 @@
     <p>
       Contact me through this form, I am interested in hearing from you, knowing
       your ideas and contributing to your projects with my work.
-      <br>
+      <br />
       Need a Frontend developer? <span>Let's talk</span>
     </p>
   </div>
 
   <div class="right">
-    <div class="line"></div>
-    <h3>What's your name?</h3>
-    <input type="text" placeholder="Your name goes here" required>
-    <div class="line"></div>
-    <h3>What's your email?</h3>
-    <input type="email" placeholder="youremail@email.com" required>
-    <div class="line"></div>
-    <h3>How can I help you?</h3>
-    <textarea name="" id="" type="text" placeholder="Hello Sebastian, I am interested in..." required></textarea>
-    <div class="line"></div>
-    <div><input type="checkbox"> <p>I've read the<span>privacy policy</span>and agree to the processing of my data as outlined.</p></div>
-    <button>Say Hello ;) </button>
+    <form (ngSubmit)="onSubmit(contactForm)" #contactForm="ngForm">
+      <div class="line"></div>
+      <label for="name">What's your name?</label>
+      <input
+      #name="ngModel"
+        [(ngModel)]="contactData.name"
+        name="name"
+        id="name"
+        type="text"
+        placeholder="Your name goes here"
+        required
+      />
+      @if(!name.valid && name.touched && !name.disabled){
+        <span>fill</span>
+       }
+      <div class="line"></div>
+      <label for="email">What's your email?</label>
+
+      <input
+      #email="ngModel"
+        [(ngModel)]="contactData.email"
+        name="email"
+        id="email"
+        type="email"
+        placeholder="youremail@email.com"
+        required
+        pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}"
+      />
+      @if(!email.valid && email.touched && !email.disabled){
+        <span>fill</span>
+       }
+      <div class="line"></div>
+      <label for="text">How can I help you?</label>
+
+      <textarea
+        #message="ngModel"
+        [(ngModel)]="contactData.message"
+        name="message"
+        id="message"
+        type="text"
+        placeholder="Hello Sebastian, I am interested in..."
+        required
+      ></textarea>
+      @if(!message.valid && message.touched && !message.disabled){
+        <span>fill</span>
+       }
+      <div class="line"></div>
+      <div>
+        <input type="checkbox" />
+        <p>
+          I've read the<span>privacy policy</span>and agree to the processing of
+          my data as outlined.
+        </p>
+      </div>
+      
+      <button type="submit">Say Hello ;)</button>
+    </form>
   </div>
 </div>

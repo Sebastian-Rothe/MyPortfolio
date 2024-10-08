@@ -4,7 +4,6 @@
   position: relative;
   top: 0;
   width: $main-width;
-  // background-image: linear-gradient(to top right, black, rgb(15, 83, 72));
   background-size: cover;
   background-position: center;
   height: 92vh;
@@ -20,10 +19,10 @@
       position: relative;
       bottom: 50%;
       > span {
-        font-size: clamp(1.5rem, 2.5vw, 3rem);  // Dynamische Größe für Span
+        font-size: clamp(1.5rem, 2.5vw, 3rem);  
       }
       > h1 {
-        font-size: clamp(2rem, 6vw, 7rem); // Minimum 2rem, dynamisch bis maximal 6rem
+        font-size: clamp(2rem, 6vw, 7rem);
         margin: 3% 0;
       }
       .button-div {
@@ -81,7 +80,7 @@
       }
     }
     .align-mail {
-      writing-mode: vertical-rl; /* oder vertical-lr */
+      writing-mode: vertical-rl; 
       text-orientation: sideways-right;
       transform: rotate(-180deg);
       margin-left: 16%;

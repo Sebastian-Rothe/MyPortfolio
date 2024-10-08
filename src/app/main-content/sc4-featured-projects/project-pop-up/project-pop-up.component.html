@@ -1,34 +1,18 @@
-<p>project-pop-up works!</p>
-
-<div class="single-project-overlay">
-  <div class="content">
-      <div>
-
-        <!-- für index -->
-      <span>{{ service.projects[0] }}</span>
-
-      <!-- name -->
-      <span>{{service.projects[0].name}}</span>
-      <span>What is this project about</span>
-
-      <!-- beschreibung des projekts -->
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem fugit
-        ratione iste cupiditate nisi!
-      </p>
-
-      <!-- icons mit name -->
-      <div>icons with name</div>
+<div class="single-project-overlay active" (click)="closePopup()">
+  <div class="content" (click)="$event.stopPropagation()">
+    <div>
+      <span>{{ project.name }}</span>
+      <!-- <p>{{ project.description }}</p> -->
       <div>
         <button>GitHub</button>
         <button>Live Test</button>
       </div>
     </div>
     <div>
-      <span class="close-btn" id="closePopup">&times;</span>
-      <img src="{{service.projects[0].image}}" alt="" />
+      <button><img src="assets/img/featured-projects/closeBtn.svg" alt="closeBtn" (click)="closePopup()"></button>
+      
+      <img src="{{ project.image }}" alt="{{ project.name }}" />
       <button>Next project</button>
     </div>
   </div>
 </div>
-

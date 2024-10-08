@@ -1,9 +1,4 @@
 <div class="sc4-featured-p">
-
-  
-  <app-project-pop-up [service]="service"></app-project-pop-up>
-
-
   <div class="headline">
     <h3>Portfolio</h3>
     <h2>Featured Projects</h2>
@@ -16,7 +11,16 @@
   <div class="project-section">
     @for(project of service.projects; track $index){
 
-        <app-single-project [project]="project"></app-single-project>
+    <app-single-project
+      [project]="project"
+      (click)="openProject($index)"
+    ></app-single-project>
     }
   </div>
+
+  <app-project-pop-up
+    *ngIf="popupVisible"
+    [project]="selectedProject"
+    (close)="closePopup()"
+  ></app-project-pop-up>
 </div>

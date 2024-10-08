@@ -9,10 +9,5 @@ import { ProjectInterface } from '../../../interface/project.interface';
   styleUrl: './single-project.component.scss',
 })
 export class SingleProjectComponent {
-  @Input() project: ProjectInterface = {
-    name: 'EL Pollo Loco',
-    link: 'link-to-my-Pollo',
-    languages: ['JavaScript', 'HTML', 'CSS'],
-    image: 'assets/img/featured-projects/Pepe.png'
-  };
+  @Input() project!: ProjectInterface;;
 }

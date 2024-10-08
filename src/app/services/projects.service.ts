@@ -15,7 +15,7 @@ export class ProjectsService {
       image: 'assets/img/featured-projects/Pepe.png'
     },
     {
-      name: 'EL Pollo Loco',
+      name: 'Another P',
       link: 'link-to-my-Pollo',
       languages: ['JavaScript', 'HTML', 'CSS'],
       image: 'assets/img/featured-projects/Pepe.png'

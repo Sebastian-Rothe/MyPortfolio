@@ -1,27 +1,23 @@
 <nav>
-    <div>
-        <div class="left">
-            <div class="switch">
-                <input id="language-toggle" class="check-toggle check-toggle-round-flat" type="checkbox">
-                <label for="language-toggle"></label>
-                <span (click)="translate.switchLanguage('en')">EN</span>
-                <span (click)="translate.switchLanguage('de')">DE</span>
-              </div>
-        
-                <a href="">{{'link1' | translate}}</a>
-                <a href="">{{'link2' | translate}}</a>
-                <a href="">{{'link3' | translate}}</a>
-             
-               
-                    <button (click)="translate.switchLanguage('en')">EN</button>
-                    <button (click)="translate.switchLanguage('de')">DE</button>
-                   
-              
-              
-       
-        </div>
-        <div class="right">
-            <img src="assets/img/2-removebg-preview.png" alt="">
-        </div>
+  <div>
+    <div class="left">
+      <div class="switch">
+        <input
+          id="language-toggle"
+          class="check-toggle check-toggle-round-flat"
+          type="checkbox"
+        />
+        <label for="language-toggle"></label>
+        <button (click)="translate.switchLanguage('en')">EN</button>
+        <button (click)="translate.switchLanguage('de')">DE</button>
+      </div>
+
+      <a href="#about-me">{{ "link1" | translate }}</a>
+      <a href="#skill-set">{{ "link2" | translate }}</a>
+      <a href="#projects">{{ "link3" | translate }}</a>
     </div>
+    <div class="right">
+      <img src="assets/img/2-removebg-preview.png" alt="" />
+    </div>
+  </div>
 </nav>

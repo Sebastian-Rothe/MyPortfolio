@@ -26,6 +26,9 @@ $main-width: 100%;
 $main-max-width: 1920px;
 $main-padding: 0 4%;
 
+*{
+  scroll-behavior: smooth;
+}
 button,
 a,
 input,

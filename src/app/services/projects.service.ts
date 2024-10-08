@@ -18,7 +18,13 @@ export class ProjectsService {
       name: 'Another P',
       link: 'link-to-my-Pollo',
       languages: ['JavaScript', 'HTML', 'CSS'],
-      image: 'assets/img/featured-projects/Pepe.png'
+      image: 'assets/img/about-me/location_on.svg'
+    },
+    {
+      name: 'Another a',
+      link: 'link-to-my-Pollo',
+      languages: ['JavaScript', 'HTML', 'CSS'],
+      image: 'assets/img/about-me/cognition.svg'
     },
   ];
 

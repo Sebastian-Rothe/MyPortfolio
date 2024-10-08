@@ -8,28 +8,42 @@
   height: 100%;
   background-color: rgba(0, 0, 0, 0.7);
   @include dFlex();
-  opacity: 0;
-  visibility: hidden;
+  // opacity: 0;
+  // visibility: hidden;
   transition: opacity 0.3s ease, visibility 0.3s ease;
   z-index: 10;
-
 
   &.active {
     opacity: 1;
     visibility: visible;
   }
 
-  
   .content {
     background-image: linear-gradient(to top right, black, rgb(15, 83, 72));
     padding: 20px;
     border-radius: 40px;
-    text-align: center;
+    border-color: $main-color2;
+    @include dFlex($jc: space-between);
     width: 80%;
     height: 70%;
-    // max-width: 400px;
+    max-width: 1920px;
+    max-height: 1080px;
     position: relative;
-    
+
+    .left {
+      @include dFlex($jc: flex-start, $ai: flex-start);
+      flex-direction: column;
+      .index {
+        color: $main-color2;
+        font-size: larger;
+      }
+      > p {
+        max-width: 580px;
+      }
+    }
+    .right {
+      @include dFlex($ai: flex-end);
+      flex-direction: column;
+    }
   }
 }
-

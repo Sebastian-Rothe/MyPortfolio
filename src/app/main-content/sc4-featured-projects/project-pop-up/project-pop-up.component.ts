@@ -6,25 +6,31 @@ import { ProjectsService } from '../../../services/projects.service';
   selector: 'app-project-pop-up',
   standalone: true,
   templateUrl: './project-pop-up.component.html',
-  styleUrls: ['./project-pop-up.component.scss']
+  styleUrls: ['./project-pop-up.component.scss'],
 })
 export class ProjectPopUpComponent {
   @Input() project!: ProjectInterface;
   @Output() close = new EventEmitter<void>();
 
-  service = inject(ProjectsService); // Inject the ProjectsService
+  service = inject(ProjectsService);
+  projectIndex: number = 0;
+
+  ngOnInit() {
+    this.projectIndex = this.service.projects.findIndex(
+      (p) => p === this.project
+    );
+  }
+
   closePopup() {
     this.close.emit();
   }
 
   nextProject() {
-    // Get the current index of the displayed project
-    const currentIndex = this.service.projects.findIndex(p => p === this.project);
-    
-    // Calculate the next project's index
+    const currentIndex = this.service.projects.findIndex(
+      (p) => p === this.project
+    );
     const nextIndex = (currentIndex + 1) % this.service.projects.length;
-    
-    // Update the project to the next one
     this.project = this.service.projects[nextIndex];
+    this.projectIndex = nextIndex;
   }
 }

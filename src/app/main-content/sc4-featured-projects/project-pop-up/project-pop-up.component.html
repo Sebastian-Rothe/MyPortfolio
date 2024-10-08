@@ -1,16 +1,19 @@
 <div class="single-project-overlay active" (click)="closePopup()">
   <div class="content" (click)="$event.stopPropagation()">
-    <div>
+    <div class="left">
+
+      <span class="index">0{{ projectIndex + 1 }}</span>
       <span>{{ project.name }}</span>
-      <!-- <p>{{ project.description }}</p> -->
+      <span>What is this project about?</span>
+      <p>{{ project.description}}</p>
       <div>
         <button>GitHub</button>
         <button>Live Test</button>
       </div>
     </div>
-    <div>
-      <button><img src="assets/img/featured-projects/closeBtn.svg" alt="closeBtn" (click)="closePopup()"></button>
-      
+
+    <div class="right">
+      <img src="assets/img/featured-projects/closeBtn.svg" alt="closeBtn" (click)="closePopup()">
       <img src="{{ project.image }}" alt="{{ project.name }}" />
       <button (click)="nextProject()">Next project</button>
     </div>

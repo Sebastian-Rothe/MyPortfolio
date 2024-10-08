@@ -3,4 +3,5 @@ export interface ProjectInterface {
   link: string;
   languages: string[];
   image?: string;
+  description?: string;
 }

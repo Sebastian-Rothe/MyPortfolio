@@ -2,60 +2,66 @@
 
 .contact-me-div {
   background-color: $main-background;
-  @include dFlex($jc: space-around);
+  @include dFlex($jc: space-around, $ai: flex-start);
 
   .left {
     width: 40%;
-    max-width: 800px;
+    > h4 {
+      color: $main-color2;
+    }
+    > p {
+      > span {
+        color: $main-color2;
+      }
+    }
   }
 
   .right {
     width: 40%;
     max-width: 800px;
+  }
+  form {
+    display: flex;
+    flex-direction: column;
 
-    > form {
-      display: flex;
-      flex-direction: column;
+    > label {
+      color: $main-color2;
+      font-size: 1.3rem;
+      margin: 3% 0 3% 3%;
+    }
 
-      > label {
-        color: $main-color2;
-        font-size: 1.3rem;
-        margin: 3% 0 3% 3%;
-      }
+    > input,
+    > textarea {
+      font-family: "Karla";
+      font-size: 1rem;
+      margin: 0 0 3% 3%;
+      outline: none;
+    }
 
-      > input,
-      > textarea {
-        font-family: "Karla";
-        font-size: 1rem;
-        margin: 0 0 3% 3%;
-        outline: none;
-      }
+    > span {
+      margin-left: 3%;
+      color: red;
+    }
 
-      > span {
-        margin-left: 3%;
-        color: red;
-      }
-
-      .line {
-        height: 1px;
-        width: 100%;
-        background-color: $main-color2;
-      }
-      > div {
-        @include dFlex();
-        > button {
-          left: 50%;
-          height: 48px;
-          width: max-content;
-          border-radius: 100px;
-          border: 1px solid $main-color;
-          background: transparent;
-          overflow: hidden;
-          padding: 16px;
-          &:hover{
-            color: $main-color2;
-            border-color: $main-color2;
-          }
+    .line {
+      height: 1px;
+      width: 100%;
+      background-color: $main-color2;
+    }
+    > div {
+      @include dFlex();
+      > button {
+        margin-top: 12px;
+        left: 50%;
+        height: 48px;
+        width: max-content;
+        border-radius: 100px;
+        border: 1px solid $main-color;
+        background: transparent;
+        padding: 16px;
+        &:hover {
+          color: $main-color2;
+          border-color: $main-color2;
         }
       }
     }
@@ -107,11 +113,22 @@
   }
 
   .checkbox-label {
+    font-size: 14px;
     > span {
       color: $main-color2;
       &:hover {
         cursor: pointer;
       }
+    }
+  }
+}
+
+@media (max-width: 800px) {
+  .contact-me-div {
+    align-items: center;
+    flex-direction: column;
+    .left, .right{
+      width: 90%;
     }
   }
 }

@@ -81,8 +81,8 @@
 
 @media (max-width: 800px) {
   .sc3-skill-set {
-    background-color: $main-background;
     @include dFlex();
+    padding: 30px 30px;
     flex-direction: column;
   }
   .icon-container{
@@ -90,21 +90,24 @@
     gap: 10px;
   }
   .align-skill-set {
-    width: auto;
-    max-width: 400px;
+    width: 80%;
     margin-bottom: 50px;
   }
 }
-@media (max-width: 520px) {
+@media (max-width: 640px) {
   
+  .align-skill-set {
+    width: 90%;
+  }
+
+}
+@media (max-width: 520px) {
+  .sc3-skill-set {
+    padding: 30px 10px;
+  }
   .icon-container{
     max-width: 400px;
     gap: 0;
-  }
-  .align-skill-set {
-    width: 80%;
-    max-width: 80%;
- 
   }
 }
 @media (max-width: 420px) {
@@ -113,9 +116,5 @@
     max-width: 300px;
     gap: 10px;
   }
-  .align-skill-set {
-    width: 80%;
-    max-width: 80%;
-    margin-bottom: 20px;
-  }
+
 }

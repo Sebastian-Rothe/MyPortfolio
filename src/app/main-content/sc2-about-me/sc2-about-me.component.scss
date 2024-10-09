@@ -5,50 +5,48 @@
   padding: 50px 0 50px 0;
   width: $main-width;
   max-width: $main-max-width;
-  // padding: $main-padding;
   @include dFlex($jc: center, $g: 80px);
+}
+.left {
+  @include customShadow();
+  width: 35%;
+  margin-bottom: 8%;
 
-  .left {
-    @include customShadow();
-    width: 35%;
-    margin-bottom: 8%;
-
-    .image {
-      width: 100%;
-      aspect-ratio: 1 / 1;
-      border-radius: 40px;
-    }
+  .image {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    border-radius: 40px;
   }
-.align-right{
+}
+.align-right {
   width: 32%;
   margin-top: 8%;
 
   .right {
     background-color: rgb(31, 46, 43);
-    padding:  5%;
+    padding: 5%;
     aspect-ratio: 1 / 1;
     border-radius: 40px;
     @include dFlex($jc: flex-start, $ai: flex-start);
     flex-direction: column;
     border: 1px solid $main-color2;
-    >div{
-      *:not(:first-child){
-        &:hover{
+    > div {
+      *:not(:first-child) {
+        &:hover {
           transform: scale(1.01);
         }
       }
     }
-    >p{
-      font-family: 'Karla';
+    > p {
+      font-family: "Karla";
       font-size: 1.1rem;
       margin-bottom: 5%;
-
     }
-    
+
     > div {
       @include dFlex($g: 4%, $ai: flex-start);
-      >p{
-        font-family: 'Karla';
+      > p {
+        font-family: "Karla";
         font-size: 1.1rem;
         margin: 0 0 12px 0;
       }
@@ -57,10 +55,60 @@
         height: 35px;
       }
     }
-   
+  }
+}
+
+@media (max-width: 960px) {
+  .sc2-about-me {
+    padding: 50px 50px;
+    @include dFlex($jc: space-between);
+  }
+  .align-right {
+    width: 40%;
+  }
+  .left {
+    width: 45%;
+  }
+}
+
+@media (max-width: 800px) {
+  .sc2-about-me {
+    padding: 30px 30px;
+    @include dFlex();
+    flex-direction: column;
+  }
+  .align-right {
+    width: 80%;
+    margin-bottom: 30px;
+  }
+  .left {
+    width: 75%;
+    margin-bottom: 0;
+  }
+}
+@media (max-width: 640px) {
+  
+  .align-right {
+    width: 90%;
+  }
+  .left {
+    width: 85%;
+    margin-bottom: 0;
+  }
+}
+
+@media (max-width: 520px) {
+  .sc2-about-me {
+    padding: 30px 10px;
+  
+  }
+  .align-right {
+    width: 90%;
+  }
+  .left {
+    width: 85%;
+    margin-bottom: 0;
   }
 
 }
-}
-
 

@@ -9,7 +9,7 @@
   height: 92vh;
 
   .hero {
-    height: calc(100vh - 12%);
+    height: calc(100vh - 9%);
     @include dFlex($jc: space-between, $ai: flex-end);
     padding: $main-padding;
 

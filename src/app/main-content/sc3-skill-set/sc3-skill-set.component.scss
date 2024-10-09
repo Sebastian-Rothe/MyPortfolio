@@ -38,7 +38,7 @@
 .icon-container {
   max-width: 500px;
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(auto-fill, minmax(min(104px, 100%), 1fr));
   gap: 20px;
 
   .single-icon {
@@ -65,5 +65,57 @@
         color: $main-color2;
       }
     }
+  }
+}
+
+
+@media (max-width: 960px) {
+  .icon-container{
+    max-width: 400px;
+    gap: 10px;
+  }
+  .align-skill-set {
+    width: 40%;
+  }
+}
+
+@media (max-width: 800px) {
+  .sc3-skill-set {
+    background-color: $main-background;
+    @include dFlex();
+    flex-direction: column;
+  }
+  .icon-container{
+    max-width: 500px;
+    gap: 10px;
+  }
+  .align-skill-set {
+    width: auto;
+    max-width: 400px;
+    margin-bottom: 50px;
+  }
+}
+@media (max-width: 520px) {
+  
+  .icon-container{
+    max-width: 400px;
+    gap: 0;
+  }
+  .align-skill-set {
+    width: 80%;
+    max-width: 80%;
+ 
+  }
+}
+@media (max-width: 420px) {
+  
+  .icon-container{
+    max-width: 300px;
+    gap: 10px;
+  }
+  .align-skill-set {
+    width: 80%;
+    max-width: 80%;
+    margin-bottom: 20px;
   }
 }

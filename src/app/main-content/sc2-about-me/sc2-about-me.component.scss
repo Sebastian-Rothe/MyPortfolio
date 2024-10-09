@@ -5,7 +5,7 @@
   padding: 50px 0 50px 0;
   width: $main-width;
   max-width: $main-max-width;
-//   padding: $main-padding;
+  // padding: $main-padding;
   @include dFlex($jc: center, $g: 80px);
 
   .left {

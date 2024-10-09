@@ -62,8 +62,9 @@
 
       <p class="custom-checkbox">
         <input
+          #privacy="ngModel"
+          [(ngModel)]="checkboxState"
           type="checkbox"
-          ([ngModel])="checkboxState"
           id="privacy"
           name="privacy"
           required
@@ -73,14 +74,12 @@
           of my data as outlined.
         </span>
       </p>
-      <!-- @If(!privacy.valid && privacy.touched && !privacy.disabled){
+      @if(!privacy.valid && privacy.touched && !privacy.disabled){
       <span>Please accept the privacy policy.</span>
-      } -->
-   <div>
-     <button type="submit" [disabled]="contactForm.invalid">
-       Say Hello ;)
-     </button>
-   </div>
+      }
+      <div>
+        <button type="submit" value="submit">Say Hello ;)</button>
+      </div>
     </form>
   </div>
 </div>

@@ -16,7 +16,7 @@
       <div class="line"></div>
       <label for="name">What's your name?</label>
       <input
-      #name="ngModel"
+        #name="ngModel"
         [(ngModel)]="contactData.name"
         name="name"
         id="name"
@@ -25,13 +25,13 @@
         required
       />
       @if(!name.valid && name.touched && !name.disabled){
-        <span>Oops! it seems your name is missing</span>
-       }
+      <span>Oops! it seems your name is missing</span>
+      }
       <div class="line"></div>
       <label for="email">What's your email?</label>
 
       <input
-      #email="ngModel"
+        #email="ngModel"
         [(ngModel)]="contactData.email"
         name="email"
         id="email"
@@ -41,8 +41,8 @@
         pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}"
       />
       @if(!email.valid && email.touched && !email.disabled){
-        <span>Hoppala! your email is required</span>
-       }
+      <span>Hoppala! your email is required</span>
+      }
       <div class="line"></div>
       <label for="text">How can I help you?</label>
 
@@ -56,18 +56,31 @@
         required
       ></textarea>
       @if(!message.valid && message.touched && !message.disabled){
-        <span>What do you need to develop?</span>
-       }
+      <span>What do you need to develop?</span>
+      }
       <div class="line"></div>
-      
-        <p>
-          <input type="checkbox" required />
-          I've read the <span>privacy policy</span> and agree to the processing of
-          my data as outlined.
-        </p>
-      
-      
-      <button type="submit">Say Hello ;)</button>
+
+      <p class="custom-checkbox">
+        <input
+          type="checkbox"
+          ([ngModel])="checkboxState"
+          id="privacy"
+          name="privacy"
+          required
+        />
+        <span class="checkbox-label">
+          I've read the <span>privacy policy</span> and agree to the processing
+          of my data as outlined.
+        </span>
+      </p>
+      <!-- @If(!privacy.valid && privacy.touched && !privacy.disabled){
+      <span>Please accept the privacy policy.</span>
+      } -->
+   <div>
+     <button type="submit" [disabled]="contactForm.invalid">
+       Say Hello ;)
+     </button>
+   </div>
     </form>
   </div>
 </div>

@@ -18,6 +18,7 @@ export class Sc6ContactMeComponent {
     message: '',
   };
 
+  checkboxState = false;
   mailTest = false;
 
   post = {

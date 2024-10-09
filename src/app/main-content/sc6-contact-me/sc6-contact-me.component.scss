@@ -1,56 +1,116 @@
-@import '../../../styles.scss';
+@import "../../../styles.scss";
 
+.contact-me-div {
+  background-color: $main-background;
+  @include dFlex($jc: space-around);
 
+  .left {
+    width: 40%;
+    max-width: 800px;
+  }
 
-.contact-me-div{
-    background-color: $main-background;
-    @include dFlex($jc: space-around);
-    .left{
-        width: 40%;
-        max-width: 800px;
-    }
-    .right{
-        >form{
-            display: flex;
-            flex-direction: column;
+  .right {
+    width: 40%;
+    max-width: 800px;
 
-            >label{
-                color: $main-color2;
-                font-size: 1.3rem;
-                margin: 3% 0 3% 3%;
-            }
-            >input{
-                font-family: 'Karla';
-                font-size: 1rem;
-                margin: 0 0 3% 3%;
-                outline: none;
-                
-            }
-            >textarea{
-                font-family: 'Karla';
-                margin: 0 0 0 3%;
-                font-size: 1rem;
-                outline: none;
-            }
-            >span{
-                margin-left: 3%;
-                color: red;
-            }
-            >p{
-                >span{
-                    color: $main-color2;
-                    &:hover{
-                        cursor: pointer;;
-                    }
-                }
-            }
+    > form {
+      display: flex;
+      flex-direction: column;
+
+      > label {
+        color: $main-color2;
+        font-size: 1.3rem;
+        margin: 3% 0 3% 3%;
+      }
+
+      > input,
+      > textarea {
+        font-family: "Karla";
+        font-size: 1rem;
+        margin: 0 0 3% 3%;
+        outline: none;
+      }
+
+      > span {
+        margin-left: 3%;
+        color: red;
+      }
+
+      .line {
+        height: 1px;
+        width: 100%;
+        background-color: $main-color2;
+      }
+      > div {
+        @include dFlex();
+        > button {
+          left: 50%;
+          height: 48px;
+          width: max-content;
+          border-radius: 100px;
+          border: 1px solid $main-color;
+          background: transparent;
+          overflow: hidden;
+          padding: 16px;
+          &:hover{
+            color: $main-color2;
+            border-color: $main-color2;
+          }
         }
-        width: 40%;
-        max-width: 800px;
-        .line{
-            height: 1px;
-            width: 100%;
-            background-color: $main-color2;
-        }
+      }
     }
+  }
+}
+
+.custom-checkbox {
+  display: flex;
+  align-items: center;
+  margin-top: 8px;
+
+  input[type="checkbox"] {
+    appearance: none;
+    width: 24px;
+    min-width: 24px;
+    height: 24px;
+    border: 2px solid $main-color2;
+    border-radius: 4px;
+    margin-right: 10px;
+    background-color: transparent;
+    cursor: pointer;
+    position: relative;
+    transition: background-color 0.2s, border-color 0.2s;
+    box-sizing: border-box;
+
+    &:hover {
+      background-color: rgba(67, 214, 204, 0.2);
+    }
+
+    &:checked {
+      border-color: #43d6cc;
+
+      &::after {
+        content: "✓";
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 18px;
+        font-weight: bolder;
+        color: $main-color2;
+      }
+
+      &:hover {
+        background-color: rgba(67, 214, 204, 0.8);
+      }
+    }
+  }
+
+  .checkbox-label {
+    > span {
+      color: $main-color2;
+      &:hover {
+        cursor: pointer;
+      }
+    }
+  }
 }

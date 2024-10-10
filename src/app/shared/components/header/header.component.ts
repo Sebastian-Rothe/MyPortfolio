@@ -10,4 +10,10 @@ import { TranslationService } from '../../../services/translate.service';
 })
 export class HeaderComponent {
 translate = inject(TranslationService);
+
+public onToggleChange(event: Event): void {
+  const input = event.target as HTMLInputElement;
+  const language = input.checked ? 'de' : 'en'; // Sprache basierend auf dem Status des Toggles wechseln
+  this.translate.switchLanguage(language);
+}
 }

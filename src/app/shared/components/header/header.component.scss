@@ -1,11 +1,12 @@
-@import '../../../../styles.scss';
+@import "../../../../styles.scss";
 
 nav {
-    position: relative;
+  position: relative;
   padding: $main-padding;
   background: linear-gradient(
-    rgba(0, 0, 0, 0.1), // Weniger transparentes Schwarz oben
-    rgba(0, 0, 0, 0.2)  // Mehr Transparenz unten
+    rgba(0, 0, 0, 0.1),
+    // Weniger transparentes Schwarz oben
+    rgba(0, 0, 0, 0.2) // Mehr Transparenz unten
   );
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
   height: 12%;
@@ -28,76 +29,84 @@ nav {
   }
 }
 
-.switch {
-  position: relative;
-  display: inline-block;
-  margin: 0 5px;
-}
+// .switch {
+//   position: relative;
+//   display: inline-block;
+//   width: 84px;
+//   height: 29px;
+//   margin: 0 5px;
+// }
 
-.switch > span {
-  position: absolute;
-  top: 8px;
-  pointer-events: none;
-  font-weight: bold;
-  text-transform: uppercase;
-  
-  width: 50%;
-  text-align: center;
-}
+// // .switch input {
+// //   opacity: 0;
+// //   width: 0;
+// //   height: 0;
+// // }
+// .switch > button {
+//   position: absolute;
+//   top: 8px;
+//   pointer-events: none;
+//   font-weight: bold;
+//   text-transform: uppercase;
 
-input.check-toggle-round-flat:checked ~ .off {
-  color: #fff;
-}
+//   width: 50%;
+//   text-align: center;
+// }
 
-input.check-toggle-round-flat:checked ~ .on {
-  color: #fff;
-}
+// input.check-toggle-round-flat:checked ~ .off {
+//   color: #fff;
+// }
 
-.switch > span.on {
-  left: 0;
-  padding-left: 2px;
-  color: #F36F25;
-}
+// input.check-toggle-round-flat:checked ~ .on {
+//   color: #fff;
+// }
 
-.switch > span.off {
-  right: 0;
-  padding-right: 4px;
-  color: #fff;
-}
+// .switch > button.on {
+//   left: 0;
+//   padding-left: 2px;
+//   color: #f36f25;
+// }
 
-.check-toggle {
-  position: absolute;
-  margin-left: -9999px;
-  visibility: hidden;
-}
-.check-toggle + label {
-  display: block;
-  position: relative;
-  cursor: pointer;
-  outline: none;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-}
+// .switch > button.off {
+//   right: 0;
+//   padding-right: 4px;
+//   color: #fff;
+// }
 
-input.check-toggle-round-flat + label {
-  padding: 2px;
-  width: 84px;
-  height: 24px;
-  background-color: transparent;
-  border: 1px solid $main-color2;
-  -webkit-border-radius: 60px;
-  -moz-border-radius: 60px;
-  -ms-border-radius: 60px;
-  -o-border-radius: 60px;
-  border-radius: 60px;
-}
-input.check-toggle-round-flat + label:before, input.check-toggle-round-flat + label:after {
-  display: block;
-  position: absolute;
-  content: "";
-}
+// .check-toggle {
+//   position: absolute;
+//   margin-left: -9999px;
+//   visibility: hidden;
+// }
+// .check-toggle + label {
+//   display: block;
+//   position: relative;
+//   cursor: pointer;
+//   outline: none;
+//   -webkit-user-select: none;
+//   -moz-user-select: none;
+//   -ms-user-select: none;
+//   user-select: none;
+// }
+
+// input.check-toggle-round-flat + label {
+//   padding: 2px;
+//   width: 84px;
+//   height: 24px;
+//   background-color: transparent;
+//   border: 1px solid $main-color2;
+//   -webkit-border-radius: 60px;
+//   -moz-border-radius: 60px;
+//   -ms-border-radius: 60px;
+//   -o-border-radius: 60px;
+//   border-radius: 60px;
+// }
+// input.check-toggle-round-flat + label:before,
+// input.check-toggle-round-flat + label:after {
+//   display: block;
+//   position: absolute;
+//   content: "";
+// }
 
 // input.check-toggle-round-flat + label:before {
 //   top: 2px;
@@ -105,33 +114,118 @@ input.check-toggle-round-flat + label:before, input.check-toggle-round-flat + la
 //   bottom: 2px;
 //   right: 2px;
 //   background-color: transparent;
-//   -webkit-{
+//   -webkit- {
 //     -moz-border-radius: 60px;
 //     -ms-border-radius: 60px;
 //     -o-border-radius: 60px;
 //     border-radius: 60px;
 //   }
-  
 // }
-input.check-toggle-round-flat + label:after {
-bottom: 0.5px;
-  width: 44px;
-  height: 28px;
-  background-color: #fff;
-  -webkit-border-radius: 52px;
-  -moz-border-radius: 52px;
-  -ms-border-radius: 52px;
-  -o-border-radius: 52px;
-  border-radius: 52px;
-  -webkit-transition: margin 0.2s;
-  -moz-transition: margin 0.2s;
-  -o-transition: margin 0.2s;
-  transition: margin 0.2s;
+// input.check-toggle-round-flat + label:after {
+//   bottom: 0.5px;
+//   width: 44px;
+//   height: 24px;
+//   background-color: #fff;
+//   -webkit-border-radius: 52px;
+//   -moz-border-radius: 52px;
+//   -ms-border-radius: 52px;
+//   -o-border-radius: 52px;
+//   border-radius: 52px;
+//   -webkit-transition: margin 0.2s;
+//   -moz-transition: margin 0.2s;
+//   -o-transition: margin 0.2s;
+//   transition: margin 0.2s;
+// }
+
+// input.check-toggle-round-flat:checked + label {
+// }
+
+// input.check-toggle-round-flat:checked + label:after {
+//   margin-left: 40px;
+// }
+
+// button {
+//   font-family: Fira Code;
+//   font-size: 16px;
+//   line-height: 19.2px;
+//   pointer-events: auto;
+// }
+
+// .first-button {
+//   margin-right: 10px;
+// }
+
+
+.switch {
+  position: relative;
+  display: inline-flex; /* Ändere auf inline-flex für bessere Ausrichtung */
+  align-items: center; /* Zentriert den Inhalt vertikal */
+  width: 84px;
+  height: 29px;
+  margin: 0 5px;
 }
 
-input.check-toggle-round-flat:checked + label {
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+label {
+  display: block;
+  position: relative;
+  cursor: pointer;
+  outline: none;
+  user-select: none;
+}
+
+.check-toggle-round-flat + label {
+  padding: 2px;
+  width: 84px;
+  height: 24px;
+  background-color: transparent;
+  border: 1px solid rgb(61, 207, 182);
+  border-radius: 60px;
+}
+
+.check-toggle-round-flat + label:after {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: 0.5px;
+  width: 44px;
+  height: 24px;
+  background-color: #fff;
+  border-radius: 52px;
+  transition: margin 0.2s;
 }
 
 input.check-toggle-round-flat:checked + label:after {
   margin-left: 40px;
 }
+
+.switch div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.text {
+  font-family: Fira Code;
+  font-size: bold;
+  line-height: 19.2px;
+  pointer-events: auto;
+
+}
+
+
+input.check-toggle-round-flat:checked ~ div .text.en {
+  font-weight: 400;
+  color: #3dcfb680;
+}
+
+input.check-toggle-round-flat:checked ~ div .text.de {
+  font-weight: 700;
+}
+

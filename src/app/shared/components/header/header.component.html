@@ -6,11 +6,14 @@
           id="language-toggle"
           class="check-toggle check-toggle-round-flat"
           type="checkbox"
+          (change)="onToggleChange($event)"
         />
-        <label for="language-toggle"></label>
-        <button (click)="translate.switchLanguage('en')">EN</button>
-        <button (click)="translate.switchLanguage('de')">DE</button>
+        <label for="language-toggle">
+          <span class="text en">EN</span>
+          <span class="text de">DE</span>
+        </label>
       </div>
+      
 
       <a href="#about-me">{{ "link1" | translate }}</a>
       <a href="#skill-set">{{ "link2" | translate }}</a>

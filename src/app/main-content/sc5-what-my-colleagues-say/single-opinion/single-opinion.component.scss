@@ -1,16 +1,20 @@
 @import "../../../../styles.scss";
 
 .single-opinion {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   width: 35%;
+  height: 250px;
+  min-width: 500px;
   border: 2px solid $main-color2;
   background-color: $main-color3;
-  padding: 2%;
+  padding: 6%;
   border-radius: 24px;
   
-
   > p {
     margin: 0 0 14px 0;
-    // text-align: justify;
+  
   }
   .line-and-name {
     @include dFlex($g: 4%);

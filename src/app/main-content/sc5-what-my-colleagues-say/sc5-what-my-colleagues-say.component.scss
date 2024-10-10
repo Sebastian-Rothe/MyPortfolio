@@ -3,11 +3,11 @@
 .sc5-w-m-c {
   background-color: $main-background;
   height: 60vh;
-  padding: $main-padding;
   padding-top: 5vh;
   padding-bottom: 5vh;
-  @include dFlex();
+  @include dFlex($jc: space-evenly);
   flex-direction: column;
+  overflow: hidden;
   > span {
     font-size: 1.8rem;
     color: $main-color2;
@@ -17,4 +17,72 @@
     height: 100%;
     @include dFlex();
   }
+}
+
+.slider {
+  position: relative;
+  overflow: hidden; // Verhindert, dass überflüssiger Inhalt sichtbar ist
+  width: 100%; // Volle Breite des Containers
+}
+
+// Container für die Slides
+.slides {
+  display: flex; // Flexbox für horizontale Anordnung
+  transition: transform 0.5s ease-in-out;
+  overflow: hidden;
+  gap: 6%;
+}
+
+// Jeder einzelne Slide
+.slide {
+  // position: relative;
+  display: flex;
+  min-width: 35%;
+  overflow: hidden;
+}
+
+.prev,
+.next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(255, 255, 255, 0.8);
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.prev {
+  left: 10px; // Linke Position
+}
+
+.next {
+  right: 10px; // Rechte Position
+}
+
+// Styles für die Punktnavigation
+.dots {
+  text-align: center; // Zentriert die Punkte
+  margin-top: 10px; // Abstand nach oben
+}
+
+.dot {
+  display: inline-block; // Inline-Block für die Punkte
+  width: 10px; // Breite der Punkte
+  height: 10px; // Höhe der Punkte
+  margin: 0 5px; // Horizontaler Abstand zwischen den Punkten
+  border-radius: 50%; // Runde Punkte
+  background-color: lightgray; // Standardfarbe der Punkte
+  cursor: pointer; // Zeigt, dass sie klickbar sind
+  transition: background-color 0.3s; // Sanfter Übergang bei Hover
+}
+
+.dot.active {
+  background-color: $main-color2; // Hervorhebung des aktiven Punktes
+}
+
+// Hover-Effekt für die Punkte
+.dot:hover {
+  background-color: darkgray; // Farbe bei Hover
 }

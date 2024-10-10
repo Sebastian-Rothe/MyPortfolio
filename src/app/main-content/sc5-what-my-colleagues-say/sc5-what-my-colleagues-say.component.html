@@ -1,11 +1,40 @@
-<div class="sc5-w-m-c">
+<!-- <div class="sc5-w-m-c">
     <span>What my colleagues say about me</span>
     <div class="input-from-colleagues">
         
-            @for(opinion of opinion; track opinion){
+            @for(opinion of opinions; track opinion){
         
                 <app-single-opinion [opinion]="opinion"></app-single-opinion> 
             }
         
     </div>
+</div> -->
+
+<div class="sc5-w-m-c">
+  <span>What my colleagues say about me</span>
+  <div class="slider">
+    <div class="slides" [style.transform]="getTransform()">
+      <!-- <div class="slide"> -->
+        @for(opinion of opinions; track $index){
+        <app-single-opinion [opinion]="opinion"></app-single-opinion>
+
+        }
+      <!-- </div> -->
+    </div>
+    <div></div>
+  </div>
+  <div class="dots">
+    <button class="prev" (click)="prevSlide()">&#10094;</button>
+    <span>
+      @for(opinion of opinions; track $index){
+      <div
+        class="dot"
+        [class.active]="$index === currentSlide"
+        (click)="goToSlide($index)"
+      ></div>
+
+      }
+    </span>
+    <button class="next" (click)="nextSlide()">&#10095;</button>
+  </div>
 </div>

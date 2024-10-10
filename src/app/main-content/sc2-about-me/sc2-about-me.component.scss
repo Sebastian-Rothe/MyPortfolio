@@ -5,7 +5,7 @@
   padding: 50px 0 50px 0;
   width: $main-width;
   max-width: $main-max-width;
-  @include dFlex($jc: center, $g: 80px);
+  @include dFlex($jc: space-around, $g: 80px);
 }
 .left {
   @include customShadow();

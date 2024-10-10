@@ -22,7 +22,7 @@
     font-size: clamp(1.5rem, 2.5vw, 3rem);
   }
   > h1 {
-    font-size: clamp(2.5rem, 8vw, 8rem);
+    font-size: clamp(4.5rem, 8vw, 8rem);
     margin: 3% 0;
   }
   .button-div {
@@ -118,11 +118,17 @@
       }
     }
   }
+  .center {
+    >h1{
+      word-break: normal;
+      text-align: center;
+    }
+  }
 }
-// @media (max-width: 600px) {
-//   .hero {
-//     .center {
-//       position: absolute;
-//     }
-//   }
-// }
+@media (max-width: 620px) {
+ 
+  .center {
+    width: min-content;
+  }
+  
+}

@@ -5,8 +5,9 @@
     "link2": "Skills",
     "link3": "Projects",
     "subtitle": "Frontend Developer",
-      "button1": "Check me work",
+    "button1": "Check me work",
     "button2": "Contact me",
+
     "item1" :"Available for remote work",
     "item2" :"Frontend Developer",
     "item3" :"Based in Frankfurt (FFM)",
@@ -14,5 +15,11 @@
     "item5" :"Available for remote work",
     "item6" :"Frontend Developer",
     "item7" :"Based in Frankfurt (FFM)",
-    "item8" :"Open to work"
+    "item8" :"Open to work", 
+
+    "who": "who I Am",
+    "p1": "Hi, I’m a german speaking Frontend Developer based in Frankfurt. Motivated by the limitless opportunities within IT, I am excited about crafting visually captivating and intuitive websites and applications.",
+    "p2": "Flexible in terms of working environments, I can work effectively both on-site in Frankfurt and remotely.",
+    "p3": "I am open-minded and always looking for personal challenges to constantly improve my knowledge and skills.",
+    "p4": "In my profession, programming isn't just about writing code; it's a creative form of problem-solving. I take pride in my ability to distill complex technical challenges into simple, user-friendly solutions. This way, I help you achieve your goals and bring your visions to life."
 }

@@ -69,15 +69,15 @@
           required
         />
         <span class="checkbox-label">
-          I've read the <span>privacy policy</span> and agree to the processing
-          of my data as outlined.
+          <span>{{ "policy1" | translate }}</span><a href="" class="policy"> {{ "policy2" | translate }}</a><span> {{ "policy3" | translate }}</span> 
+        
         </span>
       </p>
       @if(!privacy.valid && privacy.touched && !privacy.disabled){
       <span>Please accept the privacy policy.</span>
       }
       <div>
-        <button type="submit" value="submit">Say Hello ;)</button>
+        <button type="submit" value="submit">{{ "hello" | translate }}</button>
       </div>
     </form>
   </div>

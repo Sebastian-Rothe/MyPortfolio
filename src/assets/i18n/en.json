@@ -50,7 +50,12 @@
     "err2": "Hoppala! your email is required",
     "q3": "How can I help you?",
     "placeholder3": "Hello Sebastian, I am interested in...",
-    "err3": "What do you need to develop?"
+    "err3": "What do you need to develop?",
+
+    "policy1": "I've read the",
+    "policy2": "privacy policy",
+    "policy3": "and agree to the processing of my data as outlined.",
+    "hello": "Say Hello ;)"
 
    
 

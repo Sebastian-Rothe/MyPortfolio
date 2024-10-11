@@ -37,7 +37,6 @@
       margin: 0 0 3% 3%;
       outline: none;
       resize: none;
-      
     }
 
     > span {
@@ -116,7 +115,7 @@
 
   .checkbox-label {
     font-size: 14px;
-    > span {
+    .policy {
       color: $main-color2;
       &:hover {
         cursor: pointer;

@@ -6,10 +6,9 @@
   width: $main-width;
   background-size: cover;
   background-position: center;
-  height: 92vh;
 }
 .hero {
-  height: calc(100vh - 9%);
+  height: calc(100vh - 100px);
   @include dFlex($jc: space-between, $ai: flex-end);
   padding: $main-padding;
 }

@@ -1,15 +1,18 @@
 import { HttpClient } from '@angular/common/http';
 import { Component, inject } from '@angular/core';
 import { FormsModule, NgForm } from '@angular/forms';
+import { TranslateModule } from '@ngx-translate/core';
+import { TranslationService } from '../../services/translate.service';
 
 @Component({
   selector: 'app-sc6-contact-me',
   standalone: true,
-  imports: [FormsModule],
+  imports: [FormsModule, TranslateModule],
   templateUrl: './sc6-contact-me.component.html',
   styleUrl: './sc6-contact-me.component.scss',
 })
 export class Sc6ContactMeComponent {
+  translate = inject(TranslationService);
   http = inject(HttpClient);
 
   contactData = {

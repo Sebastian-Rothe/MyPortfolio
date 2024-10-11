@@ -33,5 +33,25 @@
     "projects": "Featured Projects",
     "p7": " Explore a selection of my work here - Interact with projects to see my skills in action.",
 
-    "sc5": "What my colleagues say about me"
+    "sc5": "What my colleagues say about me",
+
+    "sc6": "Contact me",
+    "work": "Let's work together",
+    "problem": "Got a problem to solve?",
+    "p8": "Contact me through this form, I am interested in hearing from you, knowing your ideas and contributing to your projects with my work.",
+    "p8.3": "Need a Frontend developer?",
+    "p8.6": "Let's talk!",
+
+    "q1": "What's your name?",
+    "placeholder1": "Your name goes here",
+    "err1": "Oops! it seems your name is missing",
+    "q2": "What's your email?",
+    "placeholder2": "youremail@email.com",
+    "err2": "Hoppala! your email is required",
+    "q3": "How can I help you?",
+    "placeholder3": "Hello Sebastian, I am interested in...",
+    "err3": "What do you need to develop?"
+
+   
+
 }

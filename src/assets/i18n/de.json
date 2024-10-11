@@ -34,6 +34,23 @@
     "projects": "Ausgewählte Projekte",
     "p7": "Erkunden Sie einige meiner Arbeiten - Sehen Sie meine Fähigkeiten in Aktion",
 
-    "sc5": "Was meine Kollegen über mich sagen"
+    "sc5": "Was meine Kollegen über mich sagen",
+
+    "sc6": "Schreiben Sie mir",
+    "work": "Lassen Sie uns zusammernarbeiten",
+    "problem": "Haben Sie ein Problem zu lösen?",
+    "p8": "Schreiben Sie mir gerne mit­hilfe dieses Formulars. Ich freue mich, von Ihnen zu hören, Ihre Ideen kennen zu lernen und mit meiner Arbeit zu Ihrem Projekt beizutragen.",
+    "p8.3": "Sie brauchen einen Frontend Developer?",
+    "p8.6": "Sprechen wir darüber!",
+
+    "q1": "Wie lautet Ihr Name?",
+    "placeholder1": "Hier deinen Namen eingeben",
+    "err1": "Oops! Ihr Name fehlt noch",
+    "q2": "Wie lautet Ihre E-Mail?",
+    "placeholder2": "Deine E-Mail-Adresse...",
+    "err2": "Bitte geben Sie eine gültige E-Mail an",
+    "q3": "Womit kann ich helfen?",
+    "placeholder3": "Worum geht es?",
+    "err3": "Wie kann ich Ihnen helfen?"
 
 }

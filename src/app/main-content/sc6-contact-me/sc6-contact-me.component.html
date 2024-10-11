@@ -1,34 +1,33 @@
 <div class="contact-me-div">
   <div class="left">
-    <h3>Contact me</h3>
-    <h2>Let's work together</h2>
-    <h4>Got a problem to solve?</h4>
+    <h3>{{ "sc6" | translate }}</h3>
+    <h2>{{ "work" | translate }}</h2>
+    <h4>{{ "problem" | translate }}</h4>
     <p>
-      Contact me through this form, I am interested in hearing from you, knowing
-      your ideas and contributing to your projects with my work.
-      <br />
-      Need a Frontend developer? <span>Let's talk</span>
+      {{ "p8" | translate }}
+      <br />  <br /> 
+      {{ "p8.3" | translate }} <span>{{ "p8.6" | translate }}</span>
     </p>
   </div>
 
   <div class="right">
     <form (ngSubmit)="onSubmit(contactForm)" #contactForm="ngForm">
       <div class="line"></div>
-      <label for="name">What's your name?</label>
+      <label for="name">{{ "q1" | translate }}</label>
       <input
         #name="ngModel"
         [(ngModel)]="contactData.name"
         name="name"
         id="name"
         type="text"
-        placeholder="Your name goes here"
+        placeholder="{{ 'placeholder1' | translate }}"
         required
       />
       @if(!name.valid && name.touched && !name.disabled){
-      <span>Oops! it seems your name is missing</span>
+      <span>{{ "err1" | translate }}</span>
       }
       <div class="line"></div>
-      <label for="email">What's your email?</label>
+      <label for="email">{{ "q2" | translate }}</label>
 
       <input
         #email="ngModel"
@@ -36,15 +35,15 @@
         name="email"
         id="email"
         type="email"
-        placeholder="youremail@email.com"
+        placeholder="{{ 'placeholder2' | translate }}"
         required
         pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}"
       />
       @if(!email.valid && email.touched && !email.disabled){
-      <span>Hoppala! your email is required</span>
+      <span>{{ "err2" | translate }}</span>
       }
       <div class="line"></div>
-      <label for="text">How can I help you?</label>
+      <label for="text">{{ "q3" | translate }}</label>
 
       <textarea
         #message="ngModel"
@@ -52,11 +51,11 @@
         name="message"
         id="message"
         type="text"
-        placeholder="Hello Sebastian, I am interested in..."
+        placeholder="{{ 'placeholder3' | translate }}"
         required
       ></textarea>
       @if(!message.valid && message.touched && !message.disabled){
-      <span>What do you need to develop?</span>
+      <span>{{ "err3" | translate }}</span>
       }
       <div class="line"></div>
 

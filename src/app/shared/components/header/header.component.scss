@@ -267,3 +267,97 @@ input.check-toggle-round-flat:checked ~ div .text.de {
 .d-none{
   display: none;
 }
+
+
+
+// @import "../../../../styles.scss";
+
+// .aign-single-project {
+//   display: flex; 
+//   align-items: center; 
+
+//   .left {
+//     width: 70%; 
+
+//     .single-project {
+//       position: relative;
+//       height: 100px; 
+//       @include dFlex($jc: space-between);
+
+//       .hover-img {
+//         visibility: hidden;
+//         opacity: 0;
+//         transition: visibility 0s, opacity 0.3s ease-in-out;
+//       }
+
+//       &:hover .hover-img {
+//         visibility: visible;
+//         opacity: 1;
+//       }
+
+//       &:hover {
+//         cursor: pointer;
+//         background-color: $main-color3;
+//       }
+
+//       .name {
+//         margin-left: 16px;
+//         @include dFlex($jc: space-between, $g: 4px);
+//         font-weight: bold;
+//         font-size: 1.5rem;
+//       }
+
+//       .languages {
+//         @include dFlex($jc: space-between, $g: 20px);
+        
+//         .small-line:not(:last-child) {
+//           width: 1px;
+//           height: 16px;
+//           background-color: $main-color2;
+//         }
+//       }
+//     }
+
+//     .line {
+//       height: 1px;
+//       width: 100%; 
+//       background-color: $main-color2;
+//     }
+//   }
+
+//   .right {
+//     width: 20%; 
+//     position: relative;
+//     transform: translateY(-60%);
+//     z-index: 100;
+//     visibility: hidden; 
+//     opacity: 0; 
+//     transition: visibility 0s, opacity 0.3s ease-in-out;
+
+//     @include customShadow(
+//       $position: absolute,
+//       $border-radius: 20px,
+//       $line-gap: 12px,
+//       $angle: 135deg,
+//       $translate-x: 20px,
+//       $translate-y: 20px
+//     );
+
+//     &::before {
+//       box-sizing: border-box;
+//       padding: 10px;
+//     }
+
+//     > img {
+//       width: 300px;
+//       height: auto;
+//       display: block;
+//     }
+//   }
+
+
+//   .single-project:hover ~ .right {
+//     visibility: visible; 
+//     opacity: 1;
+//   }
+// }

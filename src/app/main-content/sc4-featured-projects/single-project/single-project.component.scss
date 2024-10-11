@@ -1,31 +1,46 @@
 @import "../../../../styles.scss";
 
+.align-single-project {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.left {
+  width: 70%;
+}
+
 .single-project {
   position: relative;
-  width: 70%;
-  height: 100px; // das muss möglicherweise noch angepasst werden!
+  height: 100px;
   @include dFlex($jc: space-between);
+
   .hover-img {
     visibility: hidden;
     opacity: 0;
     transition: visibility 0s, opacity 0.3s ease-in-out;
   }
+
   &:hover .hover-img {
     visibility: visible;
     opacity: 1;
   }
+
   &:hover {
     cursor: pointer;
     background-color: $main-color3;
   }
+
   .name {
     margin-left: 16px;
     @include dFlex($jc: space-between, $g: 4px);
     font-weight: bold;
     font-size: 1.5rem;
   }
+
   .languages {
     @include dFlex($jc: space-between, $g: 20px);
+
     .small-line:not(:last-child) {
       width: 1px;
       height: 16px;
@@ -36,15 +51,20 @@
 
 .line {
   height: 1px;
-  width: 70%;
+  width: 100%;
   background-color: $main-color2;
 }
 
+.right {
+  width: 30%;
+  position: relative;
+  @include dFlex();
+}
+
 .image-div {
-  position: absolute;
-  right: 8%;
-  transform: translateY(-60%);
   z-index: 100;
+  max-width: 300px;
+  max-height: 200px;
   visibility: hidden;
   opacity: 0;
   transition: visibility 0s, opacity 0.3s ease-in-out;
@@ -70,7 +90,7 @@
   }
 }
 
-.single-project:hover ~ .image-div {
+.left:hover ~ .right .image-div {
   visibility: visible;
   opacity: 1;
 }

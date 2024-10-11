@@ -4,16 +4,19 @@ import { SingleProjectComponent } from './single-project/single-project.componen
 import { ProjectPopUpComponent } from './project-pop-up/project-pop-up.component';
 import { ProjectsService } from '../../services/projects.service';
 import { CommonModule } from '@angular/common';
+import { TranslateModule } from '@ngx-translate/core';
+import { TranslationService } from '../../services/translate.service';
+
 
 @Component({
   selector: 'app-sc4-featured-projects',
   standalone: true,
-  imports: [SingleProjectComponent, ProjectPopUpComponent, CommonModule],
+  imports: [TranslateModule, SingleProjectComponent, ProjectPopUpComponent, CommonModule],
   templateUrl: './sc4-featured-projects.component.html',
   styleUrl: './sc4-featured-projects.component.scss',
 })
 export class Sc4FeaturedProjectsComponent {
-
+  translate = inject(TranslationService);
   service = inject(ProjectsService);
 
   selectedProject: any = null;

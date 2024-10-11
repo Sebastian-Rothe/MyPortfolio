@@ -1,15 +1,18 @@
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
 import { SingleOpinionComponent } from './single-opinion/single-opinion.component';
 import { OpinionInterface } from '../../interface/opinion.interface';
+import { TranslateModule } from '@ngx-translate/core';
+import { TranslationService } from '../../services/translate.service';
 
 @Component({
   selector: 'app-sc5-what-my-colleagues-say',
   standalone: true,
-  imports: [SingleOpinionComponent],
+  imports: [TranslateModule, SingleOpinionComponent],
   templateUrl: './sc5-what-my-colleagues-say.component.html',
   styleUrl: './sc5-what-my-colleagues-say.component.scss',
 })
 export class Sc5WhatMyColleaguesSayComponent {
+  translate = inject(TranslationService);
   opinions: OpinionInterface[] = [
     {
       name: 'Batool Zamani',

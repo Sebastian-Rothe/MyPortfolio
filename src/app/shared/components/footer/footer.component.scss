@@ -11,6 +11,9 @@ footer {
     @include dFlex($jc: space-between, $ai: flex-start, $g: 8px);
         flex-direction: column;
     }
+    .middle{
+        color: $main-color2;
+    }
     .right{
         @include dFlex($jc: space-between, $ai: flex-start);
         flex-direction: column;

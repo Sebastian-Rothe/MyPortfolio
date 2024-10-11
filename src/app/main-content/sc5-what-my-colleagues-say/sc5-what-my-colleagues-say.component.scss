@@ -76,6 +76,7 @@
   background-color: lightgray; // Standardfarbe der Punkte
   cursor: pointer; // Zeigt, dass sie klickbar sind
   transition: background-color 0.3s; // Sanfter Übergang bei Hover
+
 }
 
 .dot.active {
@@ -84,5 +85,5 @@
 
 // Hover-Effekt für die Punkte
 .dot:hover {
-  background-color: darkgray; // Farbe bei Hover
+  background-color: $main-color2;// Farbe bei Hover
 }

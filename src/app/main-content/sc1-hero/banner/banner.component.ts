@@ -1,10 +1,12 @@
-import { Component, Input} from '@angular/core';
+import { Component, Input, inject} from '@angular/core';
 import { NgxFastMarqueeModule } from 'ngx-fast-marquee';
+import { TranslateModule } from '@ngx-translate/core';
+import { TranslationService } from '../../../services/translate.service';
 
 @Component({
   selector: 'app-banner',
   standalone: true,
-  imports: [NgxFastMarqueeModule],
+  imports: [NgxFastMarqueeModule, TranslateModule],
   templateUrl: './banner.component.html',
   styleUrl: './banner.component.scss'
 })
@@ -15,4 +17,5 @@ export class BannerComponent {
   'Based in Frankfurt (FFM)',
   'Open to work',
 ]
+translate = inject(TranslationService);
 }

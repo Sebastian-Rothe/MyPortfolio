@@ -2,7 +2,17 @@
     "headline": "Hallo Welt!",
     "subheadline": "Ich bin Front-End Entwickler",
     "link1": "Über mich",
-    "link2": "Fähingkeiten",
+    "link2": "Skills",
     "link3": "Projekte",
-    "subtitle": "Frontend Entwickler"
+    "subtitle": "Frontend Entwickler",
+    "button1": "Meine Projekte",
+    "button2": "Schreiben Sie mir",
+    "item1" :"Für Remote-Arbeit verfügbar",
+    "item2" :"Frontend-Entwickler",
+    "item3" :"Stationiert in Frankfurt (FFM)",
+    "item4" :"Bereit für Arbeit",
+    "item5" :"Für Remote-Arbeit verfügbar",
+    "item6" :"Frontend-Entwickler",
+    "item7" :"Stationiert in Frankfurt (FFM)",
+    "item8" :"Bereit für Arbeit"
 }

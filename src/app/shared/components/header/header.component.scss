@@ -155,7 +155,6 @@ nav {
 //   margin-right: 10px;
 // }
 
-
 .switch {
   position: relative;
   display: inline-flex; /* Ändere auf inline-flex für bessere Ausrichtung */
@@ -216,9 +215,7 @@ input.check-toggle-round-flat:checked + label:after {
   font-size: bold;
   line-height: 19.2px;
   pointer-events: auto;
-
 }
-
 
 input.check-toggle-round-flat:checked ~ div .text.en {
   font-weight: 400;
@@ -229,3 +226,44 @@ input.check-toggle-round-flat:checked ~ div .text.de {
   font-weight: 700;
 }
 
+.hamburger-line {
+  width: 32px;
+  height: 2px;
+  background-color: white;
+  margin-top: 4px;
+  border-radius: 4px;
+}
+.hamburger-icon {
+  cursor: pointer;
+  &:hover .hamburger-line {
+    background-color: $main-color2; 
+  }
+}
+.hamburger-menu {
+  @include dFlex($g: 6px);
+  flex-direction: column;
+  background-image: linear-gradient(
+    to top right,
+    black 40%,
+    rgb(15, 83, 72) 100%
+  );
+  width: 200px;
+  padding: 16px;
+  border-radius: 10px;
+  position: absolute;
+  font-size: 1.2rem;
+}
+.hamburgerMenu {
+  display: none;
+}
+.hamburger-menu a {
+  text-decoration: none;
+  color: white;
+}
+.hamburger-menu a:hover {
+  color: #30a830;
+}
+
+.d-none{
+  display: none;
+}

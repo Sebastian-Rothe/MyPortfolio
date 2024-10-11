@@ -20,6 +20,16 @@
       <a href="#projects">{{ "link3" | translate }}</a>
     </div>
     <div class="right">
+      <div class="hamburger-icon" (click)="toggleMenu()" (click)="stopPropagation($event)">
+        <div class="hamburger-line"></div>
+        <div class="hamburger-line"></div>
+        <div class="hamburger-line"></div>
+    </div>
+    <div [ngClass]="{ 'd-none': !isMenuOpen }" class="hamburger-menu">
+      <a href="#about-me">{{ "link1" | translate }}</a>
+      <a href="#skill-set">{{ "link2" | translate }}</a>
+      <a href="#projects">{{ "link3" | translate }}</a>
+    </div>
       <img src="assets/img/2-removebg-preview.png" alt="" />
     </div>
   </div>

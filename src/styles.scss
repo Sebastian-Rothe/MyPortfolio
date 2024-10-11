@@ -91,7 +91,7 @@ textarea {
 }
 
 @mixin linkDot($positionX: -16px, $positionY: 25%, $hover-color: white) {
-  > a {
+  > a:not(.no-dot) {
     position: relative;
     &::after {
       content: "";

@@ -45,6 +45,7 @@
     @include dFlex();
     position: relative;
     >a{
+
       > img {
         position: relative;
         animation: moveArrow 1.5s ease-in infinite;
@@ -55,7 +56,7 @@
   @keyframes moveArrow {
     0%,
     100% {
-      transform: translateY(0);
+      transform: translateY(-4px);
     }
     50% {
       transform: translateY(12px);

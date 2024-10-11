@@ -8,12 +8,12 @@
   @include dFlex($jc: space-around, $g: 80px);
 }
 .left {
-  @include customShadow();
   width: 35%;
   margin-bottom: 8%;
-
+  @include customShadow();
+  
   .image {
-    width: 100%;
+    width: 90%;
     aspect-ratio: 1 / 1;
     border-radius: 40px;
   }

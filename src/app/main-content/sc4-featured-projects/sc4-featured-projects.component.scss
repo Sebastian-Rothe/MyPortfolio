@@ -6,11 +6,29 @@
   padding-top: 5vh;
   padding-bottom: 5vh;
   height: 70vh;
-  .headline{
-    .line{
-        height: 1px;
-        width: 70%;
-        background-color: $main-color2;
-    }
+}
+
+.line {
+  height: 1px;
+  width: 70%;
+  background-color: $main-color2;
+}
+
+@media (max-width: 1150px) {
+  .sc4-featured-p {
+    padding: 30px;
+  }
+}
+
+@media (max-width: 800px) {
+  .line{
+    width: 100%;
+  }
+}
+@media (max-width: 580px) {
+  .sc4-featured-p {
+
+    padding: 16px;
+
   }
 }

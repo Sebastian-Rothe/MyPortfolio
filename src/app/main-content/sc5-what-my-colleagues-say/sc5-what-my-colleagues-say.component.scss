@@ -21,25 +21,17 @@
 
 .slider {
   position: relative;
-  overflow: hidden; // Verhindert, dass überflüssiger Inhalt sichtbar ist
-  width: 100%; // Volle Breite des Containers
+  overflow: hidden;
+  width: 100%; 
 }
 
-// Container für die Slides
 .slides {
-  display: flex; // Flexbox für horizontale Anordnung
+  display: flex; 
   transition: transform 0.5s ease-in-out;
   overflow: hidden;
   gap: 6%;
 }
 
-// Jeder einzelne Slide
-.slide {
-  // position: relative;
-  display: flex;
-  min-width: 35%;
-  overflow: hidden;
-}
 
 .prev,
 .next {
@@ -54,36 +46,33 @@
 }
 
 .prev {
-  left: 10px; // Linke Position
+  left: 10px; 
 }
 
 .next {
-  right: 10px; // Rechte Position
+  right: 10px; 
 }
 
-// Styles für die Punktnavigation
+
 .dots {
-  text-align: center; // Zentriert die Punkte
-  margin-top: 10px; // Abstand nach oben
+  text-align: center; 
+  margin-top: 10px; 
 }
 
 .dot {
-  display: inline-block; // Inline-Block für die Punkte
-  width: 10px; // Breite der Punkte
-  height: 10px; // Höhe der Punkte
-  margin: 0 5px; // Horizontaler Abstand zwischen den Punkten
-  border-radius: 50%; // Runde Punkte
-  background-color: lightgray; // Standardfarbe der Punkte
-  cursor: pointer; // Zeigt, dass sie klickbar sind
-  transition: background-color 0.3s; // Sanfter Übergang bei Hover
-
+  display: inline-block; 
+  width: 10px;
+  height: 10px; 
+  margin: 0 5px; 
+  border-radius: 50%;
+  background-color: lightgray; 
+  cursor: pointer; 
+  transition: background-color 0.3s; 
 }
 
 .dot.active {
-  background-color: $main-color2; // Hervorhebung des aktiven Punktes
+  background-color: $main-color2; 
 }
-
-// Hover-Effekt für die Punkte
 .dot:hover {
-  background-color: $main-color2;// Farbe bei Hover
+  background-color: $main-color2;
 }

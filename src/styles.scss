@@ -56,12 +56,13 @@ textarea {
     color: $main-color2;
     border: 1px solid $main-color2;
 
-    > span {
-      animation: SlideLeft 2s infinite linear; // Animation hier anpassen
+    > a {
+      animation: SlideLeft 2s infinite linear; 
+      color: $main-color2;
     }
   }
 
-  > span {
+  > a {
     display: inline-block;
     position: relative;
     white-space: nowrap;

@@ -20,7 +20,7 @@
 
   .content {
     background-image: linear-gradient(to top right, black, rgb(15, 83, 72));
-    padding: 20px;
+    padding: 5%;
     border-radius: 40px;
     border-color: $main-color2;
     @include dFlex($jc: space-between);
@@ -30,20 +30,67 @@
     max-height: 1080px;
     position: relative;
 
-    .left {
-      @include dFlex($jc: flex-start, $ai: flex-start);
-      flex-direction: column;
-      .index {
-        color: $main-color2;
-        font-size: larger;
-      }
-      > p {
-        max-width: 580px;
-      }
+  }
+}
+
+.left {
+  width: 50%;
+  height: 100%;
+  @include dFlex($jc: space-between, $ai: flex-start);
+  flex-direction: column;
+  .index {
+    color: $main-color2;
+    font-size: larger;
+  }
+  > p {
+    max-width: 580px;
+  }
+}
+
+.right {
+  width: 50%;
+  height: 100%;
+  @include dFlex($jc: space-between, $ai: flex-end);
+  flex-direction: column;
+  >button{
+    color: $main-color2;
+    font-family: 'Karla';
+    font-size: 1.2rem;
+    @include dFlex($g: 4px);
+    img {
+      transition: transform 0.3s ease;
     }
-    .right {
-      @include dFlex($ai: flex-end);
-      flex-direction: column;
+    &:hover img {
+      transform: translateX(5px); 
+    }
+    &:hover{
+      color: white;
     }
   }
+}
+
+.close-btn-wrapper {
+  display: inline-block;
+  transition: transform 0.3s ease;
+
+  &:hover {
+    transform: scale(1.2); 
+    
+    .closeBtn .icon-path {
+      fill: #3dcfb6;
+    }
+  }
+}
+
+.closeBtn {
+  cursor: pointer;
+
+  .icon-path {
+    transition: fill 0.3s ease, transform 0.3s ease; 
+    fill: white; 
+  }
+}
+
+.project-img{
+  width: 90%;
 }

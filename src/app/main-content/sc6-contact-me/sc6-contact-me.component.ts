@@ -45,9 +45,16 @@ export class Sc6ContactMeComponent {
           },
           error: (error) => {
             console.error(error);
-          },
-          complete: () => console.info('send post complete'),
+          }
         });
-    } 
+    }  else {
+      this.setFormControlsTouched(ngForm);
+    }
+  }
+
+  private setFormControlsTouched(ngForm: NgForm) {
+    Object.keys(ngForm.controls).forEach(controlName => {
+      ngForm.controls[controlName].markAsTouched();
+    });
   }
 }

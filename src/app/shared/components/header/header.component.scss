@@ -28,7 +28,10 @@ nav {
     }
   }
 }
+.switch{
+  display: flex;
 
+}
 label {
   width: 84px;
   height: 24px;
@@ -115,7 +118,8 @@ input:checked + label:hover .en {
   width: 200px;
   padding: 16px;
   border-radius: 10px;
-  position: absolute;
+  position: relative;
+  top: 70px;
   font-size: 1.2rem;
 }
 .hamburgerMenu {
@@ -126,7 +130,7 @@ input:checked + label:hover .en {
   color: white;
 }
 .hamburger-menu a:hover {
-  color: #30a830;
+  color: $main-color2;
 }
 
 .d-none {

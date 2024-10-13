@@ -20,7 +20,7 @@
 
   .content {
     background-image: linear-gradient(to top right, black, rgb(15, 83, 72));
-    padding: 5%;
+    padding: 4%;
     border-radius: 40px;
     border-color: $main-color2;
     @include dFlex($jc: space-between);
@@ -98,6 +98,50 @@
   fill: #3dcfb6;
 }
 
+.first {
+  display: flex;
+  flex-direction: column;
+  .index {
+    font-family: "Karla";
+    font-size: clamp(4.5rem, 8vw, 9rem);
+    font-weight: 700;
+  }
+  .name {
+    font-size: clamp(2.5rem, 4vw, 4rem);
+    font-weight: 700;
+    word-spacing: -12px;
+  }
+}
+
+.second {
+  .headline {
+    color: $main-color2;
+    font-size: clamp(1.5rem, 2vw, 2rem);
+    font-weight: 700;
+    word-spacing: -8px;
+  }
+  > p {
+    font-family: "Karla";
+    font-size: 1.1rem;
+    font-weight: 400;
+    line-height: 1.2;
+  }
+  > div {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    > img {
+      width: 24px;
+      height: 24px;
+      filter: brightness(0) saturate(100%) invert(76%) sepia(20%)
+        saturate(1108%) hue-rotate(118deg) brightness(86%) contrast(103%);
+    }
+    >span{
+      margin-right: 8px;
+    }
+  }
+}
+
 .third {
   display: flex;
   gap: 10%;
@@ -111,7 +155,7 @@
     border: 1px solid $main-color;
     padding: 16px;
     svg {
-      transition: transform 0.3s ease; 
+      transition: transform 0.3s ease;
     }
     &:hover {
       color: $main-color2;

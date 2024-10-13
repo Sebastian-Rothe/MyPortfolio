@@ -22,56 +22,55 @@
 .slider {
   position: relative;
   overflow: hidden;
-  width: 100%; 
+  width: 100%;
 }
 
 .slides {
-  display: flex; 
+  display: flex;
   transition: transform 0.5s ease-in-out;
   overflow: hidden;
   gap: 6%;
 }
 
-
 .prev,
 .next {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  background-color: rgba(255, 255, 255, 0.8);
-  border: none;
-  padding: 10px;
-  cursor: pointer;
-  z-index: 10;
+  &:hover {
+    filter: brightness(0) saturate(100%) invert(76%) sepia(20%) saturate(1108%)
+      hue-rotate(118deg) brightness(86%) contrast(103%);
+  }
 }
 
 .prev {
-  left: 10px; 
+  margin-right: 8px;
 }
 
 .next {
-  right: 10px; 
+  margin-left: 8px;
 }
 
-
 .dots {
-  text-align: center; 
-  margin-top: 10px; 
+  display: flex;
+  text-align: center;
+  margin-top: 10px;
+  >span{
+    display: flex;
+    align-items: center;
+  }
 }
 
 .dot {
-  display: inline-block; 
+  display: inline-block;
   width: 10px;
-  height: 10px; 
-  margin: 0 5px; 
+  height: 10px;
+  margin: 0 8px;
   border-radius: 50%;
-  background-color: lightgray; 
-  cursor: pointer; 
-  transition: background-color 0.3s; 
+  background-color: lightgray;
+  cursor: pointer;
+  transition: background-color 0.3s;
 }
 
 .dot.active {
-  background-color: $main-color2; 
+  background-color: $main-color2;
 }
 .dot:hover {
   background-color: $main-color2;

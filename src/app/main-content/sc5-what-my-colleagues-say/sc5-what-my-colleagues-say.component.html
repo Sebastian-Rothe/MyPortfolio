@@ -13,7 +13,7 @@
     <div></div>
   </div>
   <div class="dots">
-    <button class="prev" (click)="prevSlide()">&#10094;</button>
+    <img src="assets/img/arrow_back.svg" alt="arrow arrow_back" class="prev" (click)="prevSlide()">
     <span>
       @for(opinion of opinions; track $index){
       <div
@@ -24,6 +24,6 @@
 
       }
     </span>
-    <button class="next" (click)="nextSlide()">&#10095;</button>
+    <img src="assets/img/arrow_forward_white.svg" alt="arrow_forward" class="next" (click)="nextSlide()">
   </div>
 </div>

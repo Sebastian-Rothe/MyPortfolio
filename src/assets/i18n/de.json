@@ -53,5 +53,10 @@
     "policy1": "Ich habe die",
     "policy2": "Datenschutzerklärung",
     "policy3": "gelesen und erkläre mich mit der Verarbeitung meiner Daten einverstanden.",
-    "hello": "Sag Hello ;)"
+    "hello": "Sag Hello ;)",
+
+    "imp-1": "Impressum",
+    "imp-2": "Kontakt",
+    "imp-3": "Telefon",
+    "imp-4": "Quelle:"
 }

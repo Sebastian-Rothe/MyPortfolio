@@ -1,0 +1,13 @@
+@import "../../styles.scss";
+div{
+    height: 78vh;
+    width: 100%;
+    max-width: $main-max-width;
+    text-align: center;
+}
+h3{
+    padding-top: 20%;
+}
+a {
+  color: $main-color2;
+}

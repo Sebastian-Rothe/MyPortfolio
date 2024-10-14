@@ -1,5 +1,6 @@
 @import "../../styles.scss";
 div{
+  font-size: 1.4rem;
     height: 78vh;
     width: 100%;
     max-width: $main-max-width;
@@ -7,6 +8,7 @@ div{
 }
 h3{
     padding-top: 20%;
+    font-size: 3rem;
 }
 a {
   color: $main-color2;

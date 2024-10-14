@@ -1,4 +1,5 @@
 export interface OpinionInterface{
     name: string,
-    text: string
+    text: string, 
+    occupation: string,
 }

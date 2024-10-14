@@ -73,6 +73,7 @@ export class ProjectsService {
     {
       name: 'Batool Zamani',
       text: `Ich habe mit Sebastian an zwei Projekten zusammengearbeitet. Er bringt immer positive Energie mit. Er ist sehr gut darin, seine Zeit zu organisieren und findet auch in schwierigen Situationen stets effektive Lösungen.`,
+      occupation: 'Team Partner',
     },
     {
       name: 'Muaz Yildiz',
@@ -86,10 +87,12 @@ Darüber hinaus muss ich betonen, dass Sebastian nicht nur ein begabter Programm
 
 Insgesamt kann ich mit Überzeugung sagen, dass Sebastians technisches Know-how kombiniert mit seinem Organisationstalent ihn zu einem unschätzbaren Asset in jedem Entwicklungsteam macht. Es war eine Bereicherung, mit ihm zusammenzuarbeiten und ich bin sicher davon überzeugt, dass er auch künftig Großartiges leisten wird.
 `,
+      occupation: 'Team Partner',
     },
     {
       name: 'Emre Isik',
       text: `Mit Sebastian habe ich am Kochwelt-Projekt zusammengearbeitet. Sebastian ist ein extrem strukturierter und sympathischer Mensch. Das konnte man ihm schon in den ersten Minuten anmerken. So schnell er auch war, so konzentriert und zielstrebig war er ebenfalls. Ich habe sehr gerne mit Sebastian gearbeitet. Er ist jemand, den man sich immer in einer Gruppenarbeit wünschen würde.`,
+      occupation: 'Team Partner',
     },
   ];
 }

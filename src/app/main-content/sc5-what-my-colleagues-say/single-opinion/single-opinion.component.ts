@@ -11,5 +11,6 @@ export class SingleOpinionComponent {
   @Input() opinion: OpinionInterface = {
     name: '',
     text: '',
+    occupation: '',
   };
 }

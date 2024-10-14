@@ -20,15 +20,18 @@
 }
 
 .slider {
+  @include dFlex();
+  height: 100%;
   position: relative;
-  overflow: hidden;
   width: 100%;
+  -webkit-mask-image: linear-gradient(90deg, transparent 0% 1%, black 6% 94%, transparent 99% 100%);
+  mask-image: linear-gradient(90deg, transparent 0% 1%, black 6% 94%, transparent 99% 100%);
 }
 
 .slides {
+  position: absolute;
   display: flex;
   transition: transform 0.5s ease-in-out;
-  overflow: hidden;
   gap: 6%;
 }
 

@@ -1,6 +1,7 @@
 import { Injectable } from '@angular/core';
 import { ProjectInterface } from '../interface/project.interface';
 import { SkillIcon } from '../interface/icons.interface';
+import { OpinionInterface } from '../interface/opinion.interface';
 @Injectable({
   providedIn: 'root',
 })
@@ -65,6 +66,21 @@ export class ProjectsService {
       path: 'assets/img/skill-set/Growth.svg',
       name: 'Growth mindset',
       alt: 'Growth mindset',
+    },
+  ];
+
+  opinions: OpinionInterface[] = [
+    {
+      name: 'Batool Zamani',
+      text: `Ich habe mit Sebastian an zwei Projekten zusammengearbeitet. Er bringt immer positive Energie mit. Er ist sehr gut darin, seine Zeit zu organisieren und findet auch in schwierigen Situationen stets effektive Lösungen. Ich habe mit Sebastian an zwei Projekten zusammengearbeitet. Er bringt immer positive Energie mit. Er ist sehr gut darin, seine Zeit zu organisieren und findet auch in schwierigen Situationen stets effektive Lösungen.`,
+    },
+    {
+      name: 'Batool Zamani',
+      text: `Ich habe mit Sebastian an zwei Projekten zusammengearbeitet. Er bringt immer positive Energie mit. Er ist sehr gut darin, seine Zeit zu organisieren und findet auch in schwierigen Situationen stets effektive Lösungen.`,
+    },
+    {
+      name: 'Batool Zamani',
+      text: `Ich habe mit Sebastian an zwei Projekten zusammengearbeitet. Er bringt immer positive Energie mit. Er ist sehr gut darin, seine Zeit zu organisieren und findet auch in schwierigen Situationen stets effektive Lösungen.`,
     },
   ];
 }

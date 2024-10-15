@@ -3,5 +3,6 @@ export interface ProjectInterface {
   link: string;
   languages: string[];
   image?: string;
-  description?: string;
+  description_en: string;
+  description_de: string;
 }

@@ -1,6 +1,7 @@
 import { Component, Input, Output, EventEmitter, inject } from '@angular/core';
 import { ProjectInterface } from '../../../interface/project.interface';
 import { ProjectsService } from '../../../services/projects.service';
+import { TranslateService } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-project-pop-up',
@@ -11,11 +12,17 @@ import { ProjectsService } from '../../../services/projects.service';
 export class ProjectPopUpComponent {
   @Input() project!: ProjectInterface;
   @Output() close = new EventEmitter<void>();
-
+  
+  constructor(private translate: TranslateService) {
+    this.translate.onLangChange.subscribe(() => {
+      this.updateTranslatedText();
+    });
+  }
   service = inject(ProjectsService);
   projectIndex: number = 0;
 
   ngOnInit() {
+    this.updateTranslatedText(); 
     this.projectIndex = this.service.projects.findIndex(
       (p) => p === this.project
     );
@@ -32,5 +39,12 @@ export class ProjectPopUpComponent {
     const nextIndex = (currentIndex + 1) % this.service.projects.length;
     this.project = this.service.projects[nextIndex];
     this.projectIndex = nextIndex;
+  }
+
+  public translatedDescription: string = '';
+
+  private updateTranslatedText() {
+    const currentLang = this.translate.currentLang; 
+    this.translatedDescription = currentLang === 'de' ? this.project.description_de : this.project.description_en;
   }
 }

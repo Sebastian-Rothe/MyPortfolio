@@ -42,30 +42,40 @@ textarea {
 }
 
 
-.slide-button {
-  color: $main-color;
-  height: 48px;
-  width: max-content;
-  border-radius: 100px;
-  border: 1px solid $main-color;
-  background: transparent;
-  overflow: hidden;
-  padding: 16px;
+.slide-link {
+  display: inline-block;
+  text-decoration: none;
 
-  &:hover {
-    color: $main-color2;
-    border: 1px solid $main-color2;
+  .slide-button {
+    color: $main-color;
+    height: 48px;
+    width: max-content;
+    border-radius: 100px;
+    border: 1px solid $main-color;
+    background: transparent;
+    overflow: hidden;
+    padding: 16px;
+    white-space: nowrap;
+    cursor: pointer;
+    position: relative;
+    transition: all 0.3s ease;
 
-    > a {
-      animation: SlideLeft 2s infinite linear; 
+    &:hover {
       color: $main-color2;
+      border: 1px solid $main-color2;
     }
   }
 
-  > a {
+  &:hover .slide-text {
+    animation: SlideLeft 2s infinite linear;
+    color: $main-color2;
+  }
+
+  .slide-text {
     display: inline-block;
     position: relative;
     white-space: nowrap;
+    transition: all 0.3s ease;
   }
 }
 

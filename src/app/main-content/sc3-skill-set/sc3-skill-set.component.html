@@ -20,8 +20,15 @@
     <div class="icon-container">
       @for(icon of service.icons; track icon){
       <div class="single-icon">
+       
         <img src="{{ icon.path }}" alt="{{ icon.alt }} Icon" />
         <span>{{ icon.name }}</span>
+        @if(icon.name === 'Growth mindset'){
+          <div class="talk-bubble talk-bubble-left">
+            <span>I have a special interest in learning</span>
+            <img src="assets/img/skill-set/react-vue.svg" alt="interestsPopUp">
+          </div>
+        }
       </div>
       }
     </div>

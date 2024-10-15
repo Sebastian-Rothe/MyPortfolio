@@ -79,6 +79,16 @@
       <div>
         <button type="submit" value="submit">{{ "hello" | translate }}</button>
       </div>
+      <!-- popup.component.html -->
+<div class="popup" [ngClass]="{'visible': showPopup}" (click)="closePopup()">
+  <div class="popup-content" (click)="$event.stopPropagation()">
+    <span class="close" (click)="closePopup()">&times;</span>
+    <h2>Vielen Dank für Ihre Nachricht!</h2>
+    <p>Ihre Nachricht wurde erfolgreich gesendet. Ich werden mich so schnell wie möglich bei Ihnen melden.</p>
+    <p>Falls Sie in der Zwischenzeit Fragen haben, zögern Sie bitte nicht, mich zu kontaktieren.</p>
+  </div>
+</div>
+
     </form>
   </div>
 </div>

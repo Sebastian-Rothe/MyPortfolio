@@ -3,11 +3,12 @@ import { Component, inject } from '@angular/core';
 import { FormsModule, NgForm } from '@angular/forms';
 import { TranslateModule } from '@ngx-translate/core';
 import { TranslationService } from '../../services/translate.service';
+import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-sc6-contact-me',
   standalone: true,
-  imports: [FormsModule, TranslateModule],
+  imports: [FormsModule, TranslateModule, CommonModule],
   templateUrl: './sc6-contact-me.component.html',
   styleUrl: './sc6-contact-me.component.scss',
 })
@@ -22,7 +23,7 @@ export class Sc6ContactMeComponent {
   };
 
   checkboxState = false;
-  mailTest = false;
+  mailTest = true;
 
   post = {
     endPoint: 'https://sebastian-rothe.com/sendMail.php',
@@ -36,18 +37,23 @@ export class Sc6ContactMeComponent {
   };
 
   onSubmit(ngForm: NgForm) {
-    if (ngForm.submitted && ngForm.form.valid) {
+    if (ngForm.submitted && ngForm.form.valid && !this.mailTest) {
       this.http
         .post(this.post.endPoint, this.post.body(this.contactData))
         .subscribe({
           next: (response) => {
+            console.log(this.contactData);
+            this.openPopup();
             ngForm.resetForm();
           },
           error: (error) => {
             console.error(error);
           }
         });
-    }  else {
+    } else if (ngForm.submitted && ngForm.form.valid && this.mailTest) {
+      this.openPopup();
+      ngForm.resetForm();
+    } else {
       this.setFormControlsTouched(ngForm);
     }
   }
@@ -56,5 +62,13 @@ export class Sc6ContactMeComponent {
     Object.keys(ngForm.controls).forEach(controlName => {
       ngForm.controls[controlName].markAsTouched();
     });
+  }
+
+  showPopup: boolean = false;
+  openPopup() {
+    this.showPopup = true;
+  }
+  closePopup() {
+    this.showPopup = false;
   }
 }

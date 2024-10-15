@@ -1,6 +1,7 @@
 export interface ProjectInterface {
   name: string;
-  link: string;
+  link_github: string;
+  live_link: string;
   languages: string[];
   image?: string;
   description_en: string;

@@ -98,7 +98,7 @@
 @media (max-width: 800px) {
   .sc2-about-me {
     padding: 30px 30px;
-    @include dFlex();
+    @include dFlex($g:30px);
     flex-direction: column;
   }
   .align-right {

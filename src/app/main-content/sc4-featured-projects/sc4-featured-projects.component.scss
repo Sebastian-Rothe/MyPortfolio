@@ -21,14 +21,42 @@
 }
 
 @media (max-width: 800px) {
-  .line{
+  .line {
     width: 100%;
   }
 }
 @media (max-width: 580px) {
   .sc4-featured-p {
-
     padding: 16px;
 
+    > p {
+      text-align: justify;
+    }
   }
+}
+
+@media (max-width: 440px) {
+  .sc4-featured-p {
+    padding: 16px;
+    .headline {
+      > p {
+        text-align: justify;
+        hyphens: auto;
+      }
+    }
+  }
+}
+
+@media (max-width: 350px) {
+  .sc4-featured-p {
+    padding: 8px;
+    .headline {
+      > p {
+        font-size: 0.9rem;
+        word-spacing: -.2rem;
+      }
+      
+    }
+  }
+  
 }

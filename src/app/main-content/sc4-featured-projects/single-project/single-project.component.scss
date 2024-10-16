@@ -100,24 +100,56 @@
       width: 250px;
       aspect-ratio: 3/2;
     }
-   
-  }  
+  }
 }
 @media (max-width: 920px) {
   .image-div {
     > img {
       width: 200px;
-    
     }
-   
-  }  
+  }
 }
 @media (max-width: 800px) {
   .left {
-    width: 100%; // Setze die linke Seite auf 100%
+    width: 100%;
   }
-
   .right {
-    display: none; // Verstecke die rechte Seite
+    display: none;
+  }
+}
+
+@media (max-width: 580px) {
+  .single-project {
+    position: relative;
+    height: 80px;
+    @include dFlex($ai: flex-start);
+    flex-direction: column;
+    .languages {
+      margin-left: 16px;
+      @include dFlex($jc: space-between, $g: 10px);
+    }
+  }
+}
+@media (max-width: 580px) {
+  .single-project {
+    position: relative;
+    height: 80px;
+    @include dFlex($ai: flex-start);
+    flex-direction: column;
+    .languages {
+      margin-left: 0px;
+    }
+    .name {
+      margin-left: 0px;
+      font-size: 1.3rem;
+    }
+  }
+}
+
+@media (max-width: 380px) {
+  .single-project {
+    .languages {
+      @include dFlex($jc: space-between, $g: 5px);
+    }
   }
 }

@@ -11,10 +11,10 @@
   background-color: $main-color3;
   padding: 6%;
   border-radius: 24px;
-  font-family: 'Karla';
+  font-family: "Karla";
   font-size: 1.1rem;
   line-height: 120%;
-  
+
   > p {
     margin: 0 0 14px 0;
     max-height: 200px;
@@ -27,27 +27,73 @@
       flex-grow: 1;
       background-color: white;
     }
-    .line-2{
+    .line-2 {
       height: 1px;
       width: 6px;
       background-color: white;
     }
-
   }
 
-::-webkit-scrollbar {
-  width: 8px;
-}
-
-::-webkit-scrollbar-track {
-  background: $main-color3; 
-}
- 
-::-webkit-scrollbar-thumb {
-  background: #555; 
-}
-
-::-webkit-scrollbar-thumb:hover {
-  background: $main-color2; 
+  ::-webkit-scrollbar {
+    width: 8px;
   }
+
+  ::-webkit-scrollbar-track {
+    background: $main-color3;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: #555;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: $main-color2;
+  }
+}
+
+@media (max-width: 880px) {
+  .single-opinion {
+    width: 420px;
+    height: 280px;
+  }
+}
+
+@media (max-width: 780px) {
+  .single-opinion {
+    width: 400px;
+    height: 300px;
+  }
+}
+
+@media (max-width: 640px) {
+  .single-opinion {
+    width: 350px;
+    height: 300px;
+    > p {
+      max-height: 240px;
+    }
+  }
+}
+
+@media (max-width: 540px) {
+  .single-opinion {
+    width: 320px;
+    height: 300px;
+  }
+}
+@media (max-width: 490px) {
+  .single-opinion {
+    width: 300px;
+    height: 300px;
+  }
+  .line-2 {
+    display: none;
+  }
+  .occupation {
+    display: none;
+  }
+}
+
+@media (max-width: 400px) {
+
 }

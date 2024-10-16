@@ -3,6 +3,7 @@
 .sc5-w-m-c {
   background-color: $main-background;
   height: 60vh;
+  min-height: max-content;
   width: 100%;
   padding-top: 5vh;
   padding-bottom: 5vh;
@@ -27,6 +28,8 @@
   position: relative;
   width: 100%;
   overflow: hidden; 
+  -webkit-mask-image: linear-gradient(90deg, transparent 0% 1%, black 6% 94%, transparent 99% 100%);
+  mask-image: linear-gradient(90deg, transparent 0% 1%, black 6% 94%, transparent 99% 100%);
 }
 .slide{
   position: absolute;
@@ -107,4 +110,15 @@
 }
 .dot:hover {
   background-color: $main-color2;
+}
+
+
+@media (max-width: 780px) {
+  .prev-slide {
+     transform: translate(-170%);
+   }
+   
+   .next-slide {
+     transform: translate(70%); 
+   }
 }

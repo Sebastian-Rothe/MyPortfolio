@@ -1,7 +1,7 @@
 @import '../../../../styles.scss';
 
 footer {
-    height: 10vh;
+    height: 124px;
   
     padding: $main-padding;
     @include dFlex($jc: space-between);

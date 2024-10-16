@@ -1,29 +1,46 @@
-
 <div class="sc5-w-m-c">
   <span>{{ "sc5" | translate }}</span>
   <div class="slider">
-    <div class="slides" [style.transform]="getTransform()">
+    
+      @for(opinion of opinions; track $index){
+      <app-single-opinion
+        [opinion]="opinion"
+        class="slide"
+        [ngClass]="{
+          'second-prev-slide': $index === (currentSlide - 2 + opinions.length) % opinions.length,
+          'prev-slide': $index === (currentSlide - 1 + opinions.length) % opinions.length,
+          'active-slide': $index === currentSlide,
+          'next-slide': $index === (currentSlide + 1) % opinions.length,
+          'second-next-slide': $index === (currentSlide + 2) % opinions.length,
+          'hidden-slide': $index === (currentSlide + 3) % opinions.length
+        }"
+      ></app-single-opinion>
 
-        @for(opinion of opinions; track $index){
-        <app-single-opinion [opinion]="opinion"></app-single-opinion>
-
-        }
-
-    </div>
+      }
+    
     <div></div>
   </div>
   <div class="dots">
-    <img src="assets/img/arrow_back.svg" alt="arrow arrow_back" class="prev" (click)="prevSlide()">
+    <img
+      src="assets/img/arrow_back.svg"
+      alt="arrow arrow_back"
+      class="prev"
+      (click)="prevSlide()"
+    />
     <span>
-      @for(opinion of opinions; track $index){
+      @for(opinion of opinions; track $index){ @if($index <= 2){
       <div
         class="dot"
         [class.active]="$index === currentSlide"
         (click)="goToSlide($index)"
       ></div>
-
-      }
+      } }
     </span>
-    <img src="assets/img/arrow_forward_white.svg" alt="arrow_forward" class="next" (click)="nextSlide()">
+    <img
+      src="assets/img/arrow_forward_white.svg"
+      alt="arrow_forward"
+      class="next"
+      (click)="nextSlide()"
+    />
   </div>
 </div>

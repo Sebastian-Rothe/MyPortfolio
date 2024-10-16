@@ -3,6 +3,7 @@
 .sc5-w-m-c {
   background-color: $main-background;
   height: 60vh;
+  width: 100%;
   padding-top: 5vh;
   padding-bottom: 5vh;
   @include dFlex($jc: space-evenly);
@@ -20,20 +21,48 @@
 }
 
 .slider {
-  @include dFlex();
+  display: flex;
+  align-items: center;
   height: 100%;
   position: relative;
   width: 100%;
-  -webkit-mask-image: linear-gradient(90deg, transparent 0% 1%, black 6% 94%, transparent 99% 100%);
-  mask-image: linear-gradient(90deg, transparent 0% 1%, black 6% 94%, transparent 99% 100%);
+  overflow: hidden; 
+}
+.slide{
+  position: absolute;
+  transition: transform 0.5s ease, opacity 0.5s ease;
+}
+.active-slide {
+  left: 50%;
+  transform: translate(-50%) scale(1.2); 
+  opacity: 1; 
 }
 
-.slides {
-  position: absolute;
-  display: flex;
-  justify-content: center;
-  transition: transform 0.5s ease-in-out;
-  gap: 6%;
+.prev-slide {
+ left: 50%;
+  transform: translate(-180%);
+  opacity: 0.5; 
+}
+
+.next-slide {
+  left: 50%; 
+  transform: translate(80%); 
+  opacity: 0.5; 
+}
+
+.second-prev-slide {
+ left: 50%; 
+  transform: translate(-200%); 
+  opacity: 0; 
+}
+
+.second-next-slide {
+  left: 50%; 
+  transform: translate(200%); 
+  opacity: 0; 
+}
+.hidden-slide {
+  opacity: 0; 
 }
 
 .prev,

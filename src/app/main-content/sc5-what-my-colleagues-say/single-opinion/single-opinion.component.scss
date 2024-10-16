@@ -6,7 +6,7 @@
   justify-content: space-between;
   width: 500px;
   height: 250px;
-  min-width: 300px;
+  // min-width: 300px;
   border: 2px solid $main-color2;
   background-color: $main-color3;
   padding: 6%;
@@ -94,6 +94,10 @@
   }
 }
 
-@media (max-width: 400px) {
-
+@media (max-width: 420px) {
+  .single-opinion {
+    width: 240px;
+    height: 300px;
+  }
 }
+

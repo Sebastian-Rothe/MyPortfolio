@@ -25,7 +25,7 @@ export class ProjectsService {
       link_github: 'https://github.com/Sebastian-Rothe/Join.git',
       live_link: 'https://join.sebastian-rothe.com/',
       languages: ['JavaScript', 'Firebase', 'HTML', 'CSS'],
-      image: 'assets/img/about-me/location_on.svg',
+      image: 'assets/img/featured-projects/join.svg',
       description_en:
         'Task manager inspired by the Kanban System. Create and organize tasks using drag and drop functions, assign users and categories.',
       description_de:

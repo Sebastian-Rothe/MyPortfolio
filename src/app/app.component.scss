@@ -1,8 +1,12 @@
 @import "../styles.scss";
 
 .align-main-content {
-    background-image: linear-gradient(to top right, black 50%, rgb(15, 83, 72) 100%);
-    
+  background-image: linear-gradient(
+    to top right,
+    black 50%,
+    rgb(15, 83, 72) 100%
+  );
+
   // width: 100%;
   // max-width: $main-max-width;
   display: flex;
@@ -19,20 +23,24 @@
   box-sizing: border-box;
 }
 
-.header-align{
-    position: sticky;
-    top: 0;
-    z-index: 1000; 
-    width: 100%;
-  
+.header-align {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  width: 100%;
 }
 
-body{
-    background-image: linear-gradient(to top right, black, rgb(15, 83, 72));
+body {
+  background-image: linear-gradient(to top right, black, rgb(15, 83, 72));
 }
 
 @media (max-height: 580px) {
-  .header-align{
+  .header-align {
     position: relative;
+  }
 }
+@media (max-width: 380px) {
+  .header-align {
+    position: relative;
+  }
 }

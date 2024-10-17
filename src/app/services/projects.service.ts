@@ -36,7 +36,7 @@ export class ProjectsService {
       link_github: 'http://github.com/Sebastian-Rothe/Poke_Deck.git',
       live_link: 'https://pokedex.sebastian-rothe.com/',
       languages: ['JavaScript', 'Rest-Api', 'HTML', 'CSS'],
-      image: 'assets/img/about-me/cognition.svg',
+      image: 'assets/img/featured-projects/pokedex.png',
       description_en:
         'A Pokémon database featuring a vast collection of data on every Pokémon there is.',
       description_de:

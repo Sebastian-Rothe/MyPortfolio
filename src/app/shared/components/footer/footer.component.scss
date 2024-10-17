@@ -1,13 +1,30 @@
 @import '../../../../styles.scss';
 
 footer {
-    height: 124px;
+    height: 184px;
   
     padding: $main-padding;
     @include dFlex($jc: space-between);
     flex: 1;
 
     .left{
+        .logo{
+            >a{
+    
+              display: flex;
+              .logo2{
+                display: none;
+              }
+              &:hover{
+                .logo1{
+                  display: none;
+                }
+                .logo2{
+                  display: block;
+                }
+              }
+            }
+          }
     @include dFlex($jc: space-between, $ai: flex-start, $g: 8px);
         flex-direction: column;
     }
@@ -19,4 +36,25 @@ footer {
         flex-direction: column;
         @include linkDot( $hover-color: $main-color2 );
     }
+}
+@media (max-width: 800px) {
+    .logo{
+        >a{
+            .hide{
+                display: none !important;
+            }
+          display: flex;
+          .logo2{
+            display: none;
+          }
+          &:hover{
+            .logo1{
+              display: none;
+            }
+            .logo2{
+              display: block;
+            }
+          }
+        }
+      }
 }

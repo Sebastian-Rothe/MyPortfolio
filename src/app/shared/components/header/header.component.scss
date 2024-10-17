@@ -22,8 +22,22 @@ nav {
       @include linkDot(50%, -8px);
     }
     .right {
-      > img {
-        height: 80px;
+      .logo{
+        >a{
+
+          display: flex;
+          .logo2{
+            display: none;
+          }
+          &:hover{
+            .logo1{
+              display: none;
+            }
+            .logo2{
+              display: block;
+            }
+          }
+        }
       }
     }
   }
@@ -150,8 +164,9 @@ input:checked + label:hover .en {
     }
   }
   .right {
-    > img {
-      display: none;
+    .logo{
+      display: none !important;
     }
+  
   }
 }

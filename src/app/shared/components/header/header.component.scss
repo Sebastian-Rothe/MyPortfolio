@@ -5,8 +5,8 @@ nav {
   padding: $main-padding;
   background: linear-gradient(
     rgba(0, 0, 0, 0.1),
-    // Weniger transparentes Schwarz oben
-    rgba(0, 0, 0, 0.2) // Mehr Transparenz unten
+  
+    rgba(0, 0, 0, 0.2)
   );
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
   height: 100px;
@@ -16,6 +16,12 @@ nav {
     @include dFlex($jc: space-between);
 
     .left {
+      >a{
+        white-space: nowrap;
+      }
+      .logo-small{
+        display: none;
+      }
       width: 36%;
       @include dFlex($jc: space-between, $g: 5%);
 
@@ -156,6 +162,21 @@ input:checked + label:hover .en {
     display: block;
   }
   .left {
+    .logo-small{
+      display: block !important;
+      .logo2-small{
+        display: none;
+      }
+      &:hover{
+        .logo2-small{
+          display: block;
+        }
+        .logo1-small{
+          display: none;
+        }
+      }
+      
+    }
     .switch {
       display: none;
     }

@@ -22,11 +22,17 @@
 .header-align{
     position: sticky;
     top: 0;
-    z-index: 10; // Damit der Header über dem Hero bleibt
+    z-index: 1000; 
     width: 100%;
   
 }
 
 body{
     background-image: linear-gradient(to top right, black, rgb(15, 83, 72));
+}
+
+@media (max-height: 580px) {
+  .header-align{
+    position: relative;
+}
 }

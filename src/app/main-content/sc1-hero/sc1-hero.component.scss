@@ -134,3 +134,59 @@
   }
   
 }
+
+@media (max-width: 480px) {
+ 
+  .center {
+    
+    >h1{
+      font-size: 4rem;
+    }
+    .button-div {
+      gap: 15px;
+    }
+  }
+  
+}
+
+@media (max-width: 440px) {
+  .center {
+    >span{
+      font-size: 1.3rem;
+    }
+    >h1{
+      margin-top: 0;
+      font-size: 3rem;
+    }
+    .button-div {
+      gap: 10px;
+    }
+  } 
+}
+
+@media (max-width: 360px) {
+  .hero {
+    @include dFlex($jc: center, $ai: flex-end);
+  }
+  .left {
+    position: absolute;
+    left: 2px;
+  } 
+  .right{
+    position: absolute;
+    right: 2px;
+  }
+}
+
+@media (max-height: 800px){
+  .hero{
+    height: auto;
+    min-height: 100vh;
+  }
+  .center{
+    margin-bottom: 250px;
+  }
+}
+
+  
+

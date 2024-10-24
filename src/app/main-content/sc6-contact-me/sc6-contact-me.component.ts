@@ -42,13 +42,13 @@ export class Sc6ContactMeComponent {
         .post(this.post.endPoint, this.post.body(this.contactData))
         .subscribe({
           next: (response) => {
-            console.log(this.contactData);
             this.openPopup();
             ngForm.resetForm();
           },
           error: (error) => {
             console.error(error);
-          }
+          },
+          complete: () => console.info('send post complete'),
         });
     } else if (ngForm.submitted && ngForm.form.valid && this.mailTest) {
       console.log(this.contactData);

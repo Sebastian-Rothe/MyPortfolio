@@ -3,11 +3,7 @@
 nav {
   position: relative;
   padding: $main-padding;
-  background: linear-gradient(
-    rgba(0, 0, 0, 0.1),
-  
-    rgba(0, 0, 0, 0.2)
-  );
+  background-image: linear-gradient(to top right, black, rgb(15, 83, 72));
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
   height: 100px;
   @include dFlex();

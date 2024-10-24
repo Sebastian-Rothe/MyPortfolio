@@ -12,7 +12,7 @@ export class ProjectsService {
     {
       name: 'EL Pollo Loco',
       link_github: 'https://github.com/Sebastian-Rothe/EL-POLLO-LOCO-.git',
-      live_link: 'http://el-pollo-loco.sebastian-rothe.com/index.html',
+      live_link: 'https://el-pollo-loco.sebastian-rothe.com',
       languages: ['JavaScript', 'HTML', 'CSS'],
       image: 'assets/img/featured-projects/Pepe.png',
       description_en:
@@ -23,7 +23,7 @@ export class ProjectsService {
     {
       name: 'Join',
       link_github: 'https://github.com/Sebastian-Rothe/Join.git',
-      live_link: 'https://join.sebastian-rothe.com/',
+      live_link: 'https://join.sebastian-rothe.com',
       languages: ['JavaScript', 'Firebase', 'HTML', 'CSS'],
       image: 'assets/img/featured-projects/join.svg',
       description_en:

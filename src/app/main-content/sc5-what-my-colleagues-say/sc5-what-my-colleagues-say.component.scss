@@ -27,6 +27,7 @@
   display: flex;
   align-items: center;
   height: 100%;
+  min-height: 400px !important;
   position: relative;
   width: 100%;
   overflow: hidden;
@@ -153,7 +154,5 @@
   .sc5-w-m-c {
     height: 90vh;
   }
-  .slider{
-    min-height: 400px !important;
-  }
+
 }

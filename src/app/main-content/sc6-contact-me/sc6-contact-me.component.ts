@@ -23,7 +23,7 @@ export class Sc6ContactMeComponent {
   };
 
   checkboxState = false;
-  mailTest = true;
+  mailTest = false;
 
   post = {
     endPoint: 'https://sebastian-rothe.com/sendMail.php',
@@ -51,6 +51,7 @@ export class Sc6ContactMeComponent {
           }
         });
     } else if (ngForm.submitted && ngForm.form.valid && this.mailTest) {
+      console.log(this.contactData);
       this.openPopup();
       ngForm.resetForm();
     } else {

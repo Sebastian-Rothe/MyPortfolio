@@ -83,6 +83,7 @@
 
 .prev,
 .next {
+  cursor: pointer;
   &:hover {
     filter: brightness(0) saturate(100%) invert(76%) sepia(20%) saturate(1108%)
       hue-rotate(118deg) brightness(86%) contrast(103%);

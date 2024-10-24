@@ -1,5 +1,4 @@
 <?php
-
 switch ($_SERVER['REQUEST_METHOD']) {
     case ("OPTIONS"): //Allow preflighting to take place.
         header("Access-Control-Allow-Origin: *");
@@ -25,10 +24,8 @@ switch ($_SERVER['REQUEST_METHOD']) {
             $headers   = array();
             $headers[] = 'MIME-Version: 1.0';
             $headers[] = 'Content-type: text/html; charset=utf-8';
-
             // Additional headers
             $headers[] = "From: noreply@mywebsite.com";
-
             mail($recipient, $subject, $message, implode("\r\n", $headers));
             break;
         default: //Reject any non POST or OPTIONS requests.

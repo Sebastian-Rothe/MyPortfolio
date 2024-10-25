@@ -1,4 +1,5 @@
 <?php
+error_reporting(E_ALL); ini_set('display_errors', 1);
 switch ($_SERVER['REQUEST_METHOD']) {
     case ("OPTIONS"): // Allow preflighting to take place.
         header("Access-Control-Allow-Origin: *");

@@ -1,7 +1,8 @@
 <div class="sc5-w-m-c">
   <span>{{ "sc5" | translate }}</span>
-  <div class="slider">
-    
+  <div class="slider"  (touchstart)="onTouchStart($event)" 
+  (touchend)="onTouchEnd($event)">>
+   
       @for(opinion of opinions; track $index){
       <app-single-opinion
         [opinion]="opinion"

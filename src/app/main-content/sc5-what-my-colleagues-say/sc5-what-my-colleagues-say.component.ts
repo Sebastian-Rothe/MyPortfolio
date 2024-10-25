@@ -1,6 +1,5 @@
 import { Component, inject } from '@angular/core';
 import { SingleOpinionComponent } from './single-opinion/single-opinion.component';
-import { OpinionInterface } from '../../interface/opinion.interface';
 import { TranslateModule } from '@ngx-translate/core';
 import { TranslationService } from '../../services/translate.service';
 import { ProjectsService } from '../../services/projects.service';
@@ -20,18 +19,33 @@ export class Sc5WhatMyColleaguesSayComponent {
 
   currentSlide = 0;
 
+ 
+  private startX = 0;
+  private threshold = 50; 
 
   nextSlide() {
-    this.currentSlide = (this.currentSlide + 1) % this.opinions.length; // Zur nächsten Slide wechseln
+    this.currentSlide = (this.currentSlide + 1) % this.opinions.length; 
   }
 
   prevSlide() {
-    this.currentSlide = (this.currentSlide - 1 + this.opinions.length) % this.opinions.length; // Zur vorherigen Slide wechseln
+    this.currentSlide = (this.currentSlide - 1 + this.opinions.length) % this.opinions.length;
   }
 
   goToSlide(index: number) {
     this.currentSlide = index;
   }
-  
-  
+
+
+  onTouchStart(event: TouchEvent) {
+    this.startX = event.touches[0].clientX;
+  }
+
+  onTouchEnd(event: TouchEvent) {
+    const deltaX = event.changedTouches[0].clientX - this.startX;
+    if (deltaX > this.threshold) {
+      this.prevSlide(); 
+    } else if (deltaX < -this.threshold) {
+      this.nextSlide(); 
+    }
+  }
 }

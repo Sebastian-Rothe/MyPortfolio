@@ -30,8 +30,8 @@ export class Sc6ContactMeComponent {
     body: (payload: any) => JSON.stringify(payload),
     options: {
       headers: {
-        'Content-Type': 'text/plain',
-        responseType: 'text',
+        'Content-Type': 'application/json',
+        responseType: 'text' as 'json',
       },
     },
   };

@@ -31,10 +31,11 @@ export class Sc6ContactMeComponent {
     options: {
       headers: {
         'Content-Type': 'application/json',
-        responseType: 'text' as 'json',
       },
+      responseType: 'text' as 'json'  // Response wird explizit als Text erwartet
     },
   };
+  
 
   onSubmit(ngForm: NgForm) {
     if (ngForm.submitted && ngForm.form.valid && !this.mailTest) {

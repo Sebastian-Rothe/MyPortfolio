@@ -59,6 +59,7 @@ label {
   transition: 0.3s;
   &:hover{
     border:1px solid white;
+    cursor: pointer;
   }
   &:hover .de{
     color: $main-color2;

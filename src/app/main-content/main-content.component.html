@@ -6,4 +6,8 @@
     <app-sc4-featured-projects id="projects"></app-sc4-featured-projects>
     <app-sc5-what-my-colleagues-say></app-sc5-what-my-colleagues-say>
     <app-sc6-contact-me id="contact"></app-sc6-contact-me>
+    @if(isVisible){
+        <button id="scrollToTop" (click)="scrollToTop()" title="Go to top"><img src="assets/img/up.svg" alt="button-to-top"></button>
+    }
+
 </div>

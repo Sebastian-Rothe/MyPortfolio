@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, HostListener } from '@angular/core';
 import { Sc1HeroComponent } from './sc1-hero/sc1-hero.component';
 import { Sc2AboutMeComponent } from './sc2-about-me/sc2-about-me.component';
 import { Sc3SkillSetComponent } from './sc3-skill-set/sc3-skill-set.component';
@@ -14,5 +14,17 @@ import { Sc6ContactMeComponent } from './sc6-contact-me/sc6-contact-me.component
   styleUrl: './main-content.component.scss'
 })
 export class MainContentComponent {
+  isVisible = false;
 
+  @HostListener('window:scroll', [])
+  onWindowScroll() {
+    this.isVisible = window.scrollY > 800;
+  }
+
+  scrollToTop() {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    });
+  }
 }

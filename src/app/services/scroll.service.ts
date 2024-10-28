@@ -10,7 +10,7 @@ export class ScrollService {
   constructor(private router: Router) {}
 
   navigateWithOffset(targetId: string, offset: number = 100) {
-    this.router.navigate([], { fragment: targetId }).then(() => {
+    this.router.navigate(['/'], { fragment: targetId }).then(() => {
       const element = document.getElementById(targetId);
       if (element) {
         const elementPosition = element.getBoundingClientRect().top + window.scrollY;

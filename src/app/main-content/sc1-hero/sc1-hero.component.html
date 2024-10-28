@@ -2,7 +2,7 @@
   <div class="hero">
     <div class="left">
       <div class="arrow-container">
-        <a href="#about-me"
+        <a (click)="navigateWithOffset('about-me', 100)"
           ><img src="assets/img/hero/Vector 8.svg" alt="arrow"
         /></a>
       </div>
@@ -14,13 +14,13 @@
 
       <h1>Sebastian Rothe</h1>
       <div class="button-div">
-        <a href="#projects" class="slide-link"
+        <a (click)="navigateWithOffset('projects', 100)" class="slide-link"
           ><button class="slide-button">
             <span class="slide-text">{{ "button1" | translate }}</span>
           </button>
         </a>
 
-        <a href="#contact" class="slide-link"
+        <a (click)="navigateWithOffset('contact', 100)" class="slide-link"
           ><button class="slide-button">
             <span class="slide-text">{{ "button2" | translate }}</span>
           </button>

@@ -1,6 +1,7 @@
 @import "../../styles.scss";
 
 #main-content-div {
+  background-color: black;
   width: $main-width;
   max-width: $main-max-width;
   @include dFlex($ai: none);

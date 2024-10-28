@@ -2,7 +2,7 @@
 
 .sc2-about-me {
   background-color: $main-background;
-  padding: 50px 0 50px 0;
+  padding: 0 0 50px 0;
   width: $main-width;
   max-width: $main-max-width;
   @include dFlex($jc: space-around, $g: 80px);

@@ -1,7 +1,14 @@
-import { Component, inject, Output, EventEmitter, HostListener } from '@angular/core';
+import {
+  Component,
+  inject,
+  Output,
+  EventEmitter,
+  HostListener,
+} from '@angular/core';
 import { TranslateModule } from '@ngx-translate/core';
 import { TranslationService } from '../../../services/translate.service';
 import { CommonModule } from '@angular/common';
+import { ScrollService } from '../../../services/scroll.service';
 @Component({
   selector: 'app-header',
   standalone: true,
@@ -39,5 +46,10 @@ export class HeaderComponent {
   }
   stopPropagation(event: Event) {
     event.stopPropagation();
+  }
+  constructor(private scrollService: ScrollService) {}
+
+  navigateWithOffset(targetId: string, offset: number = 100) {
+    this.scrollService.navigateWithOffset(targetId, offset);
   }
 }

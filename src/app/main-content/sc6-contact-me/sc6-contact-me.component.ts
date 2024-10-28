@@ -32,7 +32,7 @@ export class Sc6ContactMeComponent {
       headers: {
         'Content-Type': 'application/json',
       },
-      responseType: 'text' as 'json'  // Response wird explizit als Text erwartet
+      responseType: 'text' as 'json'  
     },
   };
   

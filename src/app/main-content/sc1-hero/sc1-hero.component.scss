@@ -181,7 +181,7 @@
 @media (max-height: 800px){
   .hero{
     height: auto;
-    min-height: 100vh;
+    min-height: calc(100vh - 100px);
   }
   .center{
     margin-bottom: 250px;

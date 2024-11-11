@@ -13,19 +13,22 @@
       <span>{{ "subtitle" | translate }}</span>
 
       <h1>Sebastian Rothe</h1>
-      <div class="button-div">
-        <a (click)="navigateWithOffset('projects', 100)" class="slide-link"
-          ><button class="slide-button">
-            <span class="slide-text">{{ "button1" | translate }}</span>
-          </button>
-        </a>
+ <div class="button-div">
+  <button
+    (click)="navigateWithOffset('projects', 100)"
+    class="slide-button"
+  >
+    <span class="slide-text">{{ "button1" | translate }}</span>
+  </button>
 
-        <a (click)="navigateWithOffset('contact', 100)" class="slide-link"
-          ><button class="slide-button">
-            <span class="slide-text">{{ "button2" | translate }}</span>
-          </button>
-        </a>
-      </div>
+  <button
+    (click)="navigateWithOffset('contact', 100)"
+    class="slide-button"
+  >
+    <span class="slide-text">{{ "button2" | translate }}</span>
+  </button>
+</div>
+
     </div>
 
     <div class="right">

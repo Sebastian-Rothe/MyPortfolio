@@ -5,8 +5,7 @@
     <h4>{{ "problem" | translate }}</h4>
     <p>
       {{ "p8" | translate }}
-      <br />
-      <br />
+      <br />  <br /> 
       {{ "p8.3" | translate }} <span>{{ "p8.6" | translate }}</span>
     </p>
   </div>
@@ -68,34 +67,29 @@
           id="privacy"
           name="privacy"
           required
+          aria-labelledby="privacyLabel"
         />
         <span class="checkbox-label">
-          <span>{{ "policy1" | translate }}</span
-          ><a href="privacy-policy" class="policy">
-            {{ "policy2" | translate }}</a
-          ><span> {{ "policy3" | translate }}</span>
+          <span>{{ "policy1" | translate }}</span><a href="privacy-policy" class="policy"> {{ "policy2" | translate }}</a><span> {{ "policy3" | translate }}</span> 
+        
         </span>
       </p>
       @if(!privacy.valid && privacy.touched && !privacy.disabled){
       <span>Please accept the privacy policy.</span>
       }
       <div>
-        <button type="submit" value="submit" title="submit form">{{ "hello" | translate }}</button>
+        <button type="submit" value="submit" title="Submit">{{ "hello" | translate }}</button>
       </div>
       <!-- popup.component.html -->
-      <div
-        class="popup"
-        [ngClass]="{ visible: showPopup }"
-        (click)="closePopup()"
-        aria-label="close popup"
-      >
-        <div class="popup-content" (click)="$event.stopPropagation()">
-          <span class="close" (click)="closePopup()" aria-label="close popup">&times;</span>
-          <h2>{{ "popup-1" | translate }}</h2>
-          <p>{{ "popup-2" | translate }}</p>
-          <p>{{ "popup-3" | translate }}</p>
-        </div>
-      </div>
+<div class="popup" [ngClass]="{'visible': showPopup}" (click)="closePopup()">
+  <div class="popup-content" (click)="$event.stopPropagation()">
+    <span class="close" (click)="closePopup()">&times;</span>
+    <h2>{{ "popup-1" | translate }}</h2>
+    <p>{{ "popup-2" | translate }}</p>
+    <p>{{ "popup-3" | translate }}</p>
+  </div>
+</div>
+
     </form>
   </div>
 </div>

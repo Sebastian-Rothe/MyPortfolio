@@ -24,27 +24,29 @@
   <div class="dots">
     <img
       src="assets/img/arrow_back.svg"
-      alt="arrow arrow_back"
+      alt="Previous Slide"
       class="prev"
       (click)="prevSlide()"
-      aria-label="go to prevSlide"
+      aria-label="Go to previous slide"
     />
     <span>
       @for(opinion of opinions; track $index){ @if($index <= 2){
       <div
         class="dot"
+        role="button" 
         [class.active]="$index === currentSlide"
         (click)="goToSlide($index)"
-        aria-label="go to Slide"
+        aria-label="Go to slide"
+        tabindex="0"  
       ></div>
       } }
     </span>
     <img
       src="assets/img/arrow_forward_white.svg"
-      alt="arrow_forward"
+      alt="Next Slide"
       class="next"
       (click)="nextSlide()"
-      aria-label="go to nextSlide"
+      aria-label="Go to next slide"
     />
   </div>
 </div>

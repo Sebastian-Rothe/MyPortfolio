@@ -118,7 +118,10 @@
     font-size: 14px;
     .policy {
       color: $main-color2;
+      font-weight: 600;
+      text-decoration: underline;
       &:hover {
+        text-decoration: none;
         cursor: pointer;
       }
     }

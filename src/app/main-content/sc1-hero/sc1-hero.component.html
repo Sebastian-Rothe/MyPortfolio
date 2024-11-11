@@ -2,9 +2,12 @@
   <div class="hero">
     <div class="left">
       <div class="arrow-container">
-        <button (click)="navigateWithOffset('about-me', 100)"
-          ><img src="assets/img/hero/Vector 8.svg" alt="arrow"
-        /></button>
+        <button
+          (click)="navigateWithOffset('about-me', 100)"
+          aria-label="scroll to about-me section"
+        >
+          <img src="assets/img/hero/Vector 8.svg" alt="arrow" />
+        </button>
       </div>
       <div class="line"></div>
     </div>
@@ -13,35 +16,47 @@
       <span>{{ "subtitle" | translate }}</span>
 
       <h1>Sebastian Rothe</h1>
- <div class="button-div">
-  <button
-    (click)="navigateWithOffset('projects', 100)"
-    class="slide-button"
-  >
-    <span class="slide-text">{{ "button1" | translate }}</span>
-  </button>
+      <div class="button-div">
+        <button
+          (click)="navigateWithOffset('projects', 100)"
+          aria-label="scroll to projects section"
+          class="slide-button"
+        >
+          <span class="slide-text">{{ "button1" | translate }}</span>
+        </button>
 
-  <button
-    (click)="navigateWithOffset('contact', 100)"
-    class="slide-button"
-  >
-    <span class="slide-text">{{ "button2" | translate }}</span>
-  </button>
-</div>
-
+        <button
+          (click)="navigateWithOffset('contact', 100)"
+          aria-label="scroll to contact section"
+          class="slide-button"
+        >
+          <span class="slide-text">{{ "button2" | translate }}</span>
+        </button>
+      </div>
     </div>
 
     <div class="right">
-      <a href="mailto:mail@sebastian-rothe.com" class="d-none"
-        ><img src="assets/img/hero/mail.svg" alt="Mail Link"
+      <a
+        href="mailto:mail@sebastian-rothe.com"
+        class="d-none"
+        aria-label="send message"
+        ><img src="assets/img/hero/mail.svg" alt="Mail icon"
       /></a>
-      <a href="mailto:mail@sebastian-rothe.com" class="align-mail no-dot"
+      <a
+        href="mailto:mail@sebastian-rothe.com"
+        class="align-mail no-dot"
+        aria-label="send message"
         >mail&#64;sebastian-rothe.com</a
       >
 
-      <a href="https://github.com/Sebastian-Rothe" target="_blank"><img src="assets/img/hero/Github.svg" alt="Link Github" /></a>
-      <a href="https://linkedin.com" target="_blank"
-        ><img src="assets/img/hero/Linkedin.svg" alt="Link LinkedIn"
+      <a
+        href="https://github.com/Sebastian-Rothe"
+        target="_blank"
+        aria-label="open github"
+        ><img src="assets/img/hero/Github.svg" alt="Github icon"
+      /></a>
+      <a href="https://linkedin.com" target="_blank" aria-label="open LinkedIn"
+        ><img src="assets/img/hero/Linkedin.svg" alt="LinkedIn icon"
       /></a>
       <div class="line"></div>
     </div>

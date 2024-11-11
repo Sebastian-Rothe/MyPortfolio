@@ -1,4 +1,4 @@
-<div class="single-project-overlay active" (click)="closePopup()">
+<div class="single-project-overlay active" (click)="closePopup()" aria-label="click closes popup">
   <div class="content" (click)="$event.stopPropagation()">
     <div class="left">
       <div class="first">
@@ -20,7 +20,7 @@
       </div>
 
       <div class="third">
-        <a href="{{ project.link_github }}" target="_blank">
+        <a href="{{ project.link_github }}" target="_blank" aria-label="open project in github">
           GitHub
           <svg
             class="custom-svg"
@@ -51,7 +51,7 @@
           </svg>
         </a>
 
-        <a href="{{ project.live_link }}" target="_blank">
+        <a href="{{ project.live_link }}" target="_blank" aria-label="open project">
           Live Test
           <svg
             class="custom-svg"
@@ -84,7 +84,7 @@
     </div>
 
     <div class="right">
-      <div class="close-btn-wrapper" (click)="closePopup()">
+      <div class="close-btn-wrapper" (click)="closePopup()" aria-label="close popup">
         <svg
           width="48"
           height="48"
@@ -118,7 +118,7 @@
         alt="{{ project.name }}"
         class="project-img"
       />
-      <button (click)="nextProject()">
+      <button (click)="nextProject()" aria-label="open next project">
         Next project <img src="assets/img/arrow_forward.svg" alt="arrow_forward" />
       </button>
     </div>

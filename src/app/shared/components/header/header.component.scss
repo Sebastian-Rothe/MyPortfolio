@@ -12,7 +12,8 @@ nav {
     @include dFlex($jc: space-between);
 
     .left {
-      >a{
+      >button{
+        font-size: 1.2rem;
         white-space: nowrap;
       }
       .logo-small{
@@ -25,7 +26,7 @@ nav {
     }
     .right {
       .logo{
-        >a{
+        >button{
 
           display: flex;
           .logo2{
@@ -142,11 +143,12 @@ input:checked + label:hover .en {
 .hamburgerMenu {
   display: none;
 }
-.hamburger-menu a {
+.hamburger-menu button {
+  font-size: 1.1rem;
   text-decoration: none;
   color: white;
 }
-.hamburger-menu a:hover {
+.hamburger-menu button:hover {
   color: $main-color2;
 }
 
@@ -177,7 +179,7 @@ input:checked + label:hover .en {
     .switch {
       display: none;
     }
-    > a {
+    > button {
       display: none;
     }
   }

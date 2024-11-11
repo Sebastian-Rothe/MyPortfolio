@@ -100,8 +100,10 @@ textarea {
 
 
 @mixin linkDot($positionX: -16px, $positionY: 25%, $hover-color: white) {
-  > a:not(.no-dot) {
+  > a:not(.no-dot), 
+  > button:not(.no-dot) {
     position: relative;
+    
     &::after {
       content: "";
       position: absolute;
@@ -113,14 +115,17 @@ textarea {
       bottom: $positionY;
       opacity: 0;
     }
+    
     &:hover::after {
       opacity: 1;
     }
+    
     &:hover {
       color: $hover-color;
     }
   }
 }
+
 
 @mixin dFlex($jc: center, $ai: center, $g: 0px) {
   display: flex;

@@ -39,6 +39,7 @@ export class ProjectPopUpComponent {
     const nextIndex = (currentIndex + 1) % this.service.projects.length;
     this.project = this.service.projects[nextIndex];
     this.projectIndex = nextIndex;
+    this.updateTranslatedText();
   }
 
   public translatedDescription: string = '';

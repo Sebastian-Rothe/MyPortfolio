@@ -14,7 +14,7 @@ export class ProjectsService {
       link_github: 'https://github.com/Sebastian-Rothe/EL-POLLO-LOCO-.git',
       live_link: 'https://el-pollo-loco.sebastian-rothe.com',
       languages: ['JavaScript', 'HTML', 'CSS'],
-      image: 'assets/img/featured-projects/Pepe.png',
+      image: 'assets/img/featured-projects/el-pollo-loce.png',
       description_en:
         'Jump, run and throw game based on object-oriented approach. Help Pepe to find coins and tabasco salsa to fight against the crazy hen.',
       description_de:
@@ -25,7 +25,7 @@ export class ProjectsService {
       link_github: 'https://github.com/Sebastian-Rothe/Join.git',
       live_link: 'https://join.sebastian-rothe.com',
       languages: ['JavaScript', 'Firebase', 'HTML', 'CSS'],
-      image: 'assets/img/featured-projects/join.svg',
+      image: 'assets/img/featured-projects/join.png',
       description_en:
         'Task manager inspired by the Kanban System. Create and organize tasks using drag and drop functions, assign users and categories.',
       description_de:

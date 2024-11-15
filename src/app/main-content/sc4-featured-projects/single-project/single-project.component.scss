@@ -70,7 +70,7 @@
 
   @include customShadow(
     $position: absolute,
-    $border-radius: 20px,
+    $border-radius: 12px,
     $line-gap: 12px,
     $angle: 135deg,
     $translate-x: 20px,
@@ -84,7 +84,8 @@
 
   > img {
     width: 300px;
-    height: auto;
+    height: 170px;
+    border-radius: 12px;
     display: block;
   }
 }

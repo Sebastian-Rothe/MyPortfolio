@@ -43,9 +43,13 @@ export class ProjectPopUpComponent {
   }
 
   public translatedDescription: string = '';
+  public translatedH3: string = '';
+  public translatedH3eng: string = 'What is this project about?';
+  public translatedH3de: string = 'Worum geht es in diesem Projekt?';
 
   private updateTranslatedText() {
     const currentLang = this.translate.currentLang; 
     this.translatedDescription = currentLang === 'de' ? this.project.description_de : this.project.description_en;
+    this.translatedH3 = currentLang === 'de' ? this.translatedH3de : this.translatedH3eng;
   }
 }

@@ -42,6 +42,16 @@ export class ProjectsService {
       description_de:
         'Eine Pokémon-Datenbank mit einer Fülle an Informationen über jedes Pokémon, das es gibt.',
     },
+    {
+      name: 'MackBank-crm',
+      link_github: '',
+      live_link: '',
+      languages: ['Angular', 'TypeScript', 'Firebase'],
+      image: '',
+      description_de:
+        'MockBank ist eine Übungs-Banking-App mit CRM, die Kontoverwaltung, Überweisungen und Zinsen bietet. Ein Dashboard visualisiert Finanzdaten und das CRM verwaltet Benutzerdaten.',
+      description_en: 'MockBank is a practice banking app with CRM, offering account management, transfers, and interest. A dashboard visualizes financial data, while the CRM manages user information.',
+    },
   ];
 
   icons: SkillIcon[] = [

@@ -45,12 +45,12 @@ export class ProjectsService {
     {
       name: 'MackBank-crm',
       link_github: '',
-      live_link: '',
+      live_link: 'https://mockbank-crm.sebastian-rothe.com',
       languages: ['Angular', 'TypeScript', 'Firebase'],
-      image: '',
+      image: 'assets/img/coming-soon-img.jpg',
       description_de:
-        'MockBank ist eine Übungs-Banking-App mit CRM, die Kontoverwaltung, Überweisungen und Zinsen bietet. Ein Dashboard visualisiert Finanzdaten und das CRM verwaltet Benutzerdaten.',
-      description_en: 'MockBank is a practice banking app with CRM, offering account management, transfers, and interest. A dashboard visualizes financial data, while the CRM manages user information.',
+        '(Work in Progress - coming soon) MockBank ist eine Übungs-Banking-App mit CRM, die Kontoverwaltung, Überweisungen und Zinsen bietet. Ein Dashboard visualisiert Finanzdaten und das CRM verwaltet Benutzerdaten.',
+      description_en: '(Work in Progress - coming soon) MockBank is a practice banking app with CRM, offering account management, transfers, and interest. A dashboard visualizes financial data, while the CRM manages user information.',
     },
   ];
 

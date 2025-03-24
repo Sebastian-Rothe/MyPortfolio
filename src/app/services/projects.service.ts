@@ -10,17 +10,6 @@ export class ProjectsService {
 
   projects: ProjectInterface[] = [
     {
-      name: 'EL Pollo Loco',
-      link_github: 'https://github.com/Sebastian-Rothe/EL-POLLO-LOCO-.git',
-      live_link: 'https://el-pollo-loco.sebastian-rothe.com',
-      languages: ['JavaScript', 'HTML', 'CSS'],
-      image: 'assets/img/featured-projects/el-pollo-loce.png',
-      description_en:
-        'Jump, run and throw game based on object-oriented approach. Help Pepe to find coins and tabasco salsa to fight against the crazy hen.',
-      description_de:
-        'Sprung-, Lauf- und Wurfspiel, das auf einem objektorientierten Ansatz basiert. Hilf Pepe, Münzen und Tabasco-Salsa zu finden, um gegen die verrückte Henne zu kämpfen.',
-    },
-    {
       name: 'Join',
       link_github: 'https://github.com/Sebastian-Rothe/Join.git',
       live_link: 'https://join.sebastian-rothe.com',
@@ -32,6 +21,27 @@ export class ProjectsService {
         'Aufgabenmanager nach dem Vorbild des Kanban-Systems. Erstellen und organisieren Sie Aufgaben mit Hilfe von Drag-and-Drop-Funktionen, weisen Sie Benutzer und Kategorien zu.',
     },
     {
+      name: 'MackBank-crm',
+      link_github: 'https://git@github.com/Sebastian-Rothe/Mockbank-with-CRM.git',
+      live_link: 'https://mockbank-crm.sebastian-rothe.com',
+      languages: ['Angular', 'TypeScript', 'Firebase'],
+      image: 'assets/img/Screenshot-mockbank.png',
+      description_de:
+        '(Beta-Version) MockBank ist eine Übungs-Banking-App mit CRM, die Kontoverwaltung, Überweisungen und Zinsen bietet. Ein Dashboard visualisiert Finanzdaten und das CRM verwaltet Benutzerdaten.',
+      description_en: '(Beta-Version) MockBank is a practice banking app with CRM, offering account management, transfers, and interest. A dashboard visualizes financial data, while the CRM manages user information.',
+    },
+    {
+      name: 'EL Pollo Loco',
+      link_github: 'https://github.com/Sebastian-Rothe/EL-POLLO-LOCO-.git',
+      live_link: 'https://el-pollo-loco.sebastian-rothe.com',
+      languages: ['JavaScript', 'HTML', 'CSS'],
+      image: 'assets/img/featured-projects/el-pollo-loce.png',
+      description_en:
+        'Jump, run and throw game based on object-oriented approach. Help Pepe to find coins and tabasco salsa to fight against the crazy hen.',
+      description_de:
+        'Sprung-, Lauf- und Wurfspiel, das auf einem objektorientierten Ansatz basiert. Hilf Pepe, Münzen und Tabasco-Salsa zu finden, um gegen die verrückte Henne zu kämpfen.',
+    },
+    {
       name: 'Pokedex',
       link_github: 'http://github.com/Sebastian-Rothe/Poke_Deck.git',
       live_link: 'https://pokedex.sebastian-rothe.com/',
@@ -41,16 +51,6 @@ export class ProjectsService {
         'A Pokémon database featuring a vast collection of data on every Pokémon there is.',
       description_de:
         'Eine Pokémon-Datenbank mit einer Fülle an Informationen über jedes Pokémon, das es gibt.',
-    },
-    {
-      name: 'MackBank-crm',
-      link_github: '',
-      live_link: 'https://mockbank-crm.sebastian-rothe.com',
-      languages: ['Angular', 'TypeScript', 'Firebase'],
-      image: 'assets/img/coming-soon-img.jpg',
-      description_de:
-        '(Work in Progress - coming soon) MockBank ist eine Übungs-Banking-App mit CRM, die Kontoverwaltung, Überweisungen und Zinsen bietet. Ein Dashboard visualisiert Finanzdaten und das CRM verwaltet Benutzerdaten.',
-      description_en: '(Work in Progress - coming soon) MockBank is a practice banking app with CRM, offering account management, transfers, and interest. A dashboard visualizes financial data, while the CRM manages user information.',
     },
   ];
 

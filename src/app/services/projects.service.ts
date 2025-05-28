@@ -11,9 +11,9 @@ export class ProjectsService {
   projects: ProjectInterface[] = [
     {
       name: 'Join',
-      link_github: 'https://github.com/Sebastian-Rothe/Join.git',
+      link_github: 'https://github.com/Sebastian-Rothe/Join-Angular.git',
       live_link: 'https://join.sebastian-rothe.com',
-      languages: ['JavaScript', 'Firebase', 'HTML', 'CSS'],
+      languages: ['Angular', 'Firebase', 'TypeScript'],
       image: 'assets/img/featured-projects/join.png',
       description_en:
         'Task manager inspired by the Kanban System. Create and organize tasks using drag and drop functions, assign users and categories.',

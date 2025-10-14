@@ -10,6 +10,17 @@ export class ProjectsService {
 
   projects: ProjectInterface[] = [
     {
+      name: 'Tutorly',
+      link_github: 'https://github.com/Sebastian-Rothe/learn-with-ai.git',
+      live_link: 'https://tutorly-cyan.vercel.app/',
+      languages: ['Next.js', 'Sentry', 'Vapi.ai', 'Supabase'],
+      image: 'assets/img/featured-projects/tutorly.png',
+      description_en:
+        'AI-powered learning platform featuring personalized voice tutors for multiple subjects with intelligent progress tracking.',
+      description_de:
+        'KI-gestützte Lernplattform mit personalisierten Sprach-Tutoren für verschiedene Fachbereiche und intelligenter Fortschrittsverfolgung.',
+    },
+    {
       name: 'Join',
       link_github: 'https://github.com/Sebastian-Rothe/Join-Angular.git',
       live_link: 'https://join.sebastian-rothe.com',
@@ -22,13 +33,15 @@ export class ProjectsService {
     },
     {
       name: 'MackBank-crm',
-      link_github: 'https://git@github.com/Sebastian-Rothe/Mockbank-with-CRM.git',
+      link_github:
+        'https://git@github.com/Sebastian-Rothe/Mockbank-with-CRM.git',
       live_link: 'https://mockbank-crm.sebastian-rothe.com',
       languages: ['Angular', 'TypeScript', 'Firebase'],
       image: 'assets/img/Screenshot-mockbank.png',
       description_de:
         '(Beta-Version) MockBank ist eine Übungs-Banking-App mit CRM, die Kontoverwaltung, Überweisungen und Zinsen bietet. Ein Dashboard visualisiert Finanzdaten und das CRM verwaltet Benutzerdaten.',
-      description_en: '(Beta-Version) MockBank is a practice banking app with CRM, offering account management, transfers, and interest. A dashboard visualizes financial data, while the CRM manages user information.',
+      description_en:
+        '(Beta-Version) MockBank is a practice banking app with CRM, offering account management, transfers, and interest. A dashboard visualizes financial data, while the CRM manages user information.',
     },
     {
       name: 'EL Pollo Loco',
@@ -55,6 +68,26 @@ export class ProjectsService {
   ];
 
   icons: SkillIcon[] = [
+    {
+      path: 'assets/img/skill-set/vapi.svg',
+      name: 'Vapi.ai',
+      alt: 'Vapi.ai',
+    },
+    {
+      path: 'assets/img/skill-set/sentry.svg',
+      name: 'Sentry',
+      alt: 'Sentry',
+    },
+    {
+      path: 'assets/img/skill-set/supabase.svg',
+      name: 'Supabase',
+      alt: 'Supabase',
+    },
+    {
+      path: 'assets/img/skill-set/nextjs.svg',
+      name: 'Next.js',
+      alt: 'Next.js',
+    },
     {
       path: 'assets/img/skill-set/Angular.svg',
       name: 'Angular',

@@ -6,4 +6,5 @@ export interface ProjectInterface {
   image?: string;
   description_en: string;
   description_de: string;
+  badge?: string;
 }

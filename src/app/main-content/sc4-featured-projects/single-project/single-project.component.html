@@ -1,6 +1,9 @@
 <div class="align-single-project">
   <div class="left">
     <div class="single-project">
+      @if(project.badge){
+        <div class="project-badge">{{ project.badge }}</div>
+      }
       <span class="name"
         >{{ project.name }}
         <img

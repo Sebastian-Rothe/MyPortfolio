@@ -19,6 +19,7 @@ export class ProjectsService {
         'AI-powered learning platform featuring personalized voice tutors for multiple subjects with intelligent progress tracking.',
       description_de:
         'KI-gestützte Lernplattform mit personalisierten Sprach-Tutoren für verschiedene Fachbereiche und intelligenter Fortschrittsverfolgung.',
+      badge: 'FULLSTACK',
     },
     {
       name: 'Join',

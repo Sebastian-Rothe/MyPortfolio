@@ -12,7 +12,11 @@
       <p>
         {{ "p6" | translate }}
       </p>
-      <button (click)="navigateWithOffset('projects', 100)" class="slide-button" aria-label="scroll to contact section">
+      <button
+        (click)="navigateWithOffset('projects', 100)"
+        class="slide-button"
+        aria-label="scroll to contact section"
+      >
         <span class="slide-text">Let's Talk</span>
       </button>
     </div>
@@ -20,12 +24,13 @@
 
   <div class="skill-set-icons">
     <div class="icon-container">
-      @for(icon of service.icons; track icon){
-        @if(icon.name !== 'Supabase' && icon.name !== 'Next.js' && icon.name !== 'Sentry' && icon.name !== 'Vapi.ai'){
+      @for(icon of service.icons; track icon){ @if(icon.name !== 'Supabase' &&
+      icon.name !== 'Next.js' && icon.name !== 'Sentry' && icon.name !==
+      'Vapi.ai' && icon.name !== 'Expo' && icon.name !== 'React Native' ){
       <div class="single-icon">
         <img src="{{ icon.path }}" alt="{{ icon.alt }} Icon" />
         <span>{{ icon.name }}</span>
-        
+
         @if(icon.name === 'Growth mindset'){
         <div class="talk-bubble talk-bubble-left">
           <span>{{ "popup-msg" | translate }}</span>
@@ -33,8 +38,7 @@
         </div>
         }
       </div>
-        }
-      }
+      } }
     </div>
   </div>
 </div>

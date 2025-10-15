@@ -28,10 +28,22 @@ export class ProjectsService {
       languages: ['Angular', 'Firebase', 'TypeScript'],
       image: 'assets/img/featured-projects/join.png',
       description_en:
-        'Task manager inspired by the Kanban System. Create and organize tasks using drag and drop functions, assign users and categories.',
+      'Task manager inspired by the Kanban System. Create and organize tasks using drag and drop functions, assign users and categories.',
       description_de:
-        'Aufgabenmanager nach dem Vorbild des Kanban-Systems. Erstellen und organisieren Sie Aufgaben mit Hilfe von Drag-and-Drop-Funktionen, weisen Sie Benutzer und Kategorien zu.',
+      'Aufgabenmanager nach dem Vorbild des Kanban-Systems. Erstellen und organisieren Sie Aufgaben mit Hilfe von Drag-and-Drop-Funktionen, weisen Sie Benutzer und Kategorien zu.',
     },
+    {
+     name: 'Tracker App',
+     link_github: 'https://github.com/Sebastian-Rothe/tracker-app.git',
+     live_link: 'https://tracker-app-webpage.netlify.app',
+     languages: ['Expo', 'React Native', 'TypeScript'],
+     image: 'assets/img/featured-projects/tracker-app.png',
+     description_en:
+       "Build positive habits and track your progress with the intuitive Routine Tracker app. Whether it's exercise, meditation, reading, or other goals - we help you stay consistent!",
+     description_de:
+       'Baue positive Gewohnheiten auf und verfolge deinen Fortschritt mit der intuitiven Routine-Tracker-App. Egal ob Sport, Meditation, Lesen oder andere Ziele – wir helfen dir, konsequent dranzubleiben!',
+   badge: 'APP',
+     },
     {
       name: 'MackBank-crm',
       link_github:
@@ -69,6 +81,16 @@ export class ProjectsService {
   ];
 
   icons: SkillIcon[] = [
+     {
+      path: 'assets/img/skill-set/react-native.svg',
+      name: 'React Native',
+      alt: 'React Native',
+    },
+      {
+      path: 'assets/img/skill-set/expo.svg',
+      name: 'Expo',
+      alt: 'Expo',
+    },
     {
       path: 'assets/img/skill-set/vapi.svg',
       name: 'Vapi.ai',

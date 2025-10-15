@@ -39,9 +39,9 @@ export class ProjectsService {
      languages: ['Expo', 'React Native', 'TypeScript'],
      image: 'assets/img/featured-projects/tracker-app.png',
      description_en:
-       "Build positive habits and track your progress with the intuitive Routine Tracker app. Whether it's exercise, meditation, reading, or other goals - we help you stay consistent!",
+       "Track your daily routines, build streaks, and achieve your goals with the intuitive Routine Tracker app.",
      description_de:
-       'Baue positive Gewohnheiten auf und verfolge deinen Fortschritt mit der intuitiven Routine-Tracker-App. Egal ob Sport, Meditation, Lesen oder andere Ziele – wir helfen dir, konsequent dranzubleiben!',
+       'Verfolge deine täglichen Routinen, baue Streaks auf und erreiche deine Ziele mit der intuitiven Routine Tracker App.',
    badge: 'APP',
      },
     {

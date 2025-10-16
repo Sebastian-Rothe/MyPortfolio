@@ -1,17 +1,23 @@
-<div>
-
-    <h3>{{ "imp-1" | translate }}</h3>
+<div class="imprint-container">
+  <div class="imprint-content">
+    <h1 class="imprint-title">{{ "imp-1" | translate }}</h1>
     
-    <address>
-        Sebastian Rothe<br />
-        Mühlwehrstr. 8<br />
-        60488 Frankfurt am Main<br />
-    <br>
-        <h3>{{ "imp-2" | translate }}</h3>
-        {{ "imp-3" | translate }}: +49 176 52968778<br />
-        E-Mail:
-        <a href="mailto:mail@sebastian-rothe.com">mail&#64;sebastian-rothe.com</a
-        ><br />
+    <div class="imprint-info">
+      <address class="address-block">
+        <div class="name">Sebastian Rothe</div>
+        <div>Mühlwehrstr. 8</div>
+        <div>60488 Frankfurt am Main</div>
       </address>
-      <p>{{ "imp-4" | translate }} <a href="https://www.e-recht24.de/" target="_blank">eRecht24</a></p>
+      
+      <div class="contact-section">
+        <h2 class="contact-title">{{ "imp-2" | translate }}</h2>
+        <div class="contact-info">
+          <div>{{ "imp-3" | translate }}: +49 176 52968778</div>
+          <div>E-Mail: <a href="mailto:mail@sebastian-rothe.com">mail&#64;sebastian-rothe.com</a></div>
+        </div>
+      </div>
+    </div>
+    
+    <p class="source-info">{{ "imp-4" | translate }} <a href="https://www.e-recht24.de/" target="_blank">eRecht24</a></p>
+  </div>
 </div>

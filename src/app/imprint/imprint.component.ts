@@ -1,4 +1,4 @@
-import { Component, inject } from '@angular/core';
+import { Component, inject, OnInit } from '@angular/core';
 import { TranslateModule } from '@ngx-translate/core';
 import { TranslationService } from '../services/translate.service';
 
@@ -9,6 +9,11 @@ import { TranslationService } from '../services/translate.service';
   templateUrl: './imprint.component.html',
   styleUrl: './imprint.component.scss'
 })
-export class ImprintComponent {
+export class ImprintComponent implements OnInit {
   translate = inject(TranslationService);
+
+  ngOnInit() {
+    // Scroll to top when component loads
+    window.scrollTo(0, 0);
+  }
 }

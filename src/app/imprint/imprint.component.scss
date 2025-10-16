@@ -1,15 +1,113 @@
 @import "../../styles.scss";
-div{
-  font-size: 1.4rem;
-    height: 78vh;
-    width: 100%;
-    max-width: $main-max-width;
-    text-align: center;
+
+.imprint-container {
+  height: calc(100vh - 100px); // Abzüglich Header-Höhe (100px)
+  width: 100%;
+  max-width: $main-max-width;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  box-sizing: border-box;
 }
-h3{
-    padding-top: 20%;
-    font-size: 3rem;
+
+.imprint-content {
+  text-align: center;
+  max-width: 600px;
+  width: 100%;
 }
+
+.imprint-title {
+  font-size: clamp(2rem, 5vw, 3.5rem);
+  font-weight: 700;
+  margin-bottom: clamp(1.5rem, 4vw, 3rem);
+  color: white;
+}
+
+.imprint-info {
+  margin-bottom: clamp(2rem, 5vw, 3rem);
+}
+
+.address-block {
+  font-style: normal;
+  margin-bottom: clamp(1.5rem, 4vw, 2.5rem);
+  
+  .name {
+    font-size: clamp(1.2rem, 3vw, 1.6rem);
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    color: $main-color2;
+  }
+  
+  div {
+    font-size: clamp(1rem, 2.5vw, 1.4rem);
+    line-height: 1.6;
+    color: white;
+    margin-bottom: 0.3rem;
+  }
+}
+
+.contact-section {
+  .contact-title {
+    font-size: clamp(1.4rem, 3.5vw, 2rem);
+    font-weight: 600;
+    margin-bottom: clamp(1rem, 2.5vw, 1.5rem);
+    color: white;
+  }
+  
+  .contact-info {
+    div {
+      font-size: clamp(1rem, 2.5vw, 1.4rem);
+      line-height: 1.8;
+      color: white;
+      margin-bottom: 0.5rem;
+    }
+  }
+}
+
+.source-info {
+  font-size: clamp(0.9rem, 2vw, 1.1rem);
+  color: rgba(255, 255, 255, 0.8);
+  margin-top: auto;
+}
+
 a {
   color: $main-color2;
+  text-decoration: none;
+  transition: color 0.3s ease;
+  
+  &:hover {
+    color: lighten($main-color2, 15%);
+    text-decoration: underline;
+  }
+}
+
+// Responsive Breakpoints
+@media (max-width: 768px) {
+  .imprint-container {
+    padding: 1.5rem;
+    height: calc(100vh - 100px); // Header-Höhe bleibt konstant
+  }
+}
+
+@media (max-width: 480px) {
+  .imprint-container {
+    padding: 1rem;
+    height: calc(100vh - 100px); // Header-Höhe bleibt konstant
+  }
+}
+
+@media (max-height: 600px) {
+  .imprint-container {
+    height: calc(100vh - 100px); // Auch bei niedriger Bildschirmhöhe
+    padding: 1rem;
+  }
+  
+  .imprint-title {
+    margin-bottom: 1rem;
+  }
+  
+  .imprint-info {
+    margin-bottom: 1.5rem;
+  }
 }

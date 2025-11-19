@@ -86,32 +86,42 @@
     @include dFlex($jc: flex-start);
     flex-direction: column;
     position: relative;
+    transition: transform 0.3s ease;
 
     > img {
       width: 55px;
       height: 55px;
       padding-bottom: 4px;
-      transition: transform 0.3s ease-in-out;
-      &:hover {
-        transform: scale(1.1);
-      }
+      transition: all 0.3s ease;
+      filter: drop-shadow(0 0 0 transparent);
     }
+    
     > span {
       text-align: center;
-      transition: color 0.1s ease-in-out;
+      transition: all 0.3s ease;
+    }
+
+    &:hover {
+      transform: translateY(-8px) rotate(3deg);
+      
+      > img {
+        transform: scale(1.15);
+        filter: drop-shadow(0 8px 16px rgba(61, 207, 182, 0.4));
+      }
+      
+      > span {
+        // color: $main-color2;
+        font-weight: 500;
+      }
     }
 
     &:last-child {
-      transition: color 0.1s ease-in-out;
       position: relative;
 
       &:hover .talk-bubble {
         display: block;
         transform: translateY(-10px);
         opacity: 1;
-      }
-      &:hover span {
-        color: $main-color2;
       }
     }
   }
